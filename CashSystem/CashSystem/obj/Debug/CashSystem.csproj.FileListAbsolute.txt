@@ -1,0 +1,31 @@
+D:\Soft Eng System\CashSystem\CashSystem\bin\Debug\CashSystem.exe.config
+D:\Soft Eng System\CashSystem\CashSystem\bin\Debug\CashSystem.exe
+D:\Soft Eng System\CashSystem\CashSystem\bin\Debug\CashSystem.pdb
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.csprojAssemblyReference.cache
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.Properties.Resources.resources
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.GenerateResource.cache
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.CoreCompileInputs.cache
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.exe
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.pdb
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.admin.AdminDashboard.resources
+D:\Soft Eng System\CashSystem\CashSystem\obj\Debug\CashSystem.frmLogin.resources
+D:\SoftEngSystem\CashSystem\CashSystem\bin\Debug\CashSystem.exe.config
+D:\SoftEngSystem\CashSystem\CashSystem\bin\Debug\CashSystem.exe
+D:\SoftEngSystem\CashSystem\CashSystem\bin\Debug\CashSystem.pdb
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.csprojAssemblyReference.cache
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.admin.AdminDashboard.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.frmLogin.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.Properties.Resources.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.GenerateResource.cache
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.CoreCompileInputs.cache
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.exe
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.pdb
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.admin.OpenAccountForm1.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.admin.OpenAccountForm2.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.admin.AccountsForm.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.admin.SearchForm.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.general.DetailsAccountForm1.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.general.DetailsAccountForm2.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.general.AccountTransaction.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.general.DepositTransaction.resources
+D:\SoftEngSystem\CashSystem\CashSystem\obj\Debug\CashSystem.general.WithdrawalTransaction.resources
