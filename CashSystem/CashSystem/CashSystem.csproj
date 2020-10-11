@@ -90,6 +90,18 @@
     <Compile Include="customer\CustomerHome.Designer.cs">
       <DependentUpon>CustomerHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer\CustomerWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\CustomerWithdraw.Designer.cs">
+      <DependentUpon>CustomerWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\CustomerDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\CustomerDeposit.Designer.cs">
+      <DependentUpon>CustomerDeposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="general\DepositTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
     </Compile>
     <Compile Include="general\AccountTransaction.Designer.cs">
       <DependentUpon>AccountTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="general\AllAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general\AllAccountsForm.Designer.cs">
+      <DependentUpon>AllAccountsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="general\WithdrawalTransaction.cs">
       <SubType>Form</SubType>
@@ -153,6 +171,12 @@
     <EmbeddedResource Include="customer\CustomerHome.resx">
       <DependentUpon>CustomerHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customer\CustomerWithdraw.resx">
+      <DependentUpon>CustomerWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\CustomerDeposit.resx">
+      <DependentUpon>CustomerDeposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="general\DepositTransaction.resx">
       <DependentUpon>DepositTransaction.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="general\AccountTransaction.resx">
       <DependentUpon>AccountTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\AllAccountsForm.resx">
+      <DependentUpon>AllAccountsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="general\WithdrawalTransaction.resx">
       <DependentUpon>WithdrawalTransaction.cs</DependentUpon>
