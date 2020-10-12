@@ -84,5 +84,10 @@ namespace CashSystem.general
             this.Hide();
             AllForms.depositTransaction.Show();
         }
+
+        private void btnViewAllTransact_Click(object sender, EventArgs e)
+        {
+            AllForms.allTransactions.Show();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CashSystem.admin;
+using CashSystem.customer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,8 @@ namespace CashSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboard());
-            //Application.Run(new frmLogin());
+            //Application.Run(new CustomerHome());
+            Application.Run(new frmLogin());
         }
     }
 }

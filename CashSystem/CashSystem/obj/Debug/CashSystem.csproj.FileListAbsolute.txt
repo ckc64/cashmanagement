@@ -51,3 +51,6 @@ D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.Gener
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.csproj.CoreCompileInputs.cache
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.exe
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.pdb
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.customer.CustomerDeposit.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllAccountsForm.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllTransactions.resources

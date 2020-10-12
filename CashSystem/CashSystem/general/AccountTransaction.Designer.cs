@@ -92,6 +92,7 @@
             this.btnViewAllTransact.TabIndex = 22;
             this.btnViewAllTransact.Text = "VIEW ALL TRANSACTIONS";
             this.btnViewAllTransact.UseVisualStyleBackColor = false;
+            this.btnViewAllTransact.Click += new System.EventHandler(this.btnViewAllTransact_Click);
             // 
             // btnViewDebit
             // 

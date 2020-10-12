@@ -1,4 +1,5 @@
 ﻿using CashSystem.admin;
+using CashSystem.customer;
 using CashSystem.general;
 using System;
 using System.Collections.Generic;
@@ -29,11 +30,16 @@ namespace CashSystem
         public static AccountTransaction accountTransaction = new AccountTransaction();
         public static WithdrawalTransaction withdrawalTransaction = new WithdrawalTransaction();
         public static DepositTransaction depositTransaction = new DepositTransaction();
+        public static AllTransactions allTransactions = new AllTransactions();
 
         //Detail Account
         public static DetailsAccountForm1 detailsAccountForm1 = new DetailsAccountForm1();
         public static DetailsAccountForm2 detailsAccountForm2 = new DetailsAccountForm2();
 
+        //Customer
+        public static CustomerDeposit customerDeposit = new CustomerDeposit();
+        public static CustomerHome customerHome = new CustomerHome();
+        public static CustomerWithdraw customerWithdraw = new CustomerWithdraw();
 
     }
 }

@@ -21,7 +21,7 @@ namespace CashSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter sda = new SqlDataAdapter(queries.userCredQuery("Select", txtUsername.Text, txtPassword.Text), connection.sqlCon);
+            /*SqlDataAdapter sda = new SqlDataAdapter(queries.userCredQuery("Select", txtUsername.Text, txtPassword.Text), connection.sqlCon);
             DataTable dataTable = new DataTable();
             sda.Fill(dataTable);
             try
@@ -43,13 +43,15 @@ namespace CashSystem
                     MessageBox.Show("Please contact the admin to check");
                 }
 
+           
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Login Form Error : " + ex.Message);
-            }
-
+            }*/
+            AllForms.adminDashBoard.Show();
         }
     }
 }
