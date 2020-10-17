@@ -54,3 +54,4 @@ D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.pdb
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.customer.CustomerDeposit.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllAccountsForm.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllTransactions.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.CustomerBoard.resources

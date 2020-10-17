@@ -102,6 +102,12 @@
     <Compile Include="customer\CustomerDeposit.Designer.cs">
       <DependentUpon>CustomerDeposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="general\CustomerBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general\CustomerBoard.Designer.cs">
+      <DependentUpon>CustomerBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="general\DepositTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="customer\CustomerDeposit.resx">
       <DependentUpon>CustomerDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\CustomerBoard.resx">
+      <DependentUpon>CustomerBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="general\DepositTransaction.resx">
       <DependentUpon>DepositTransaction.cs</DependentUpon>

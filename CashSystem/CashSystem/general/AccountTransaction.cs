@@ -24,7 +24,7 @@ namespace CashSystem.general
 
         private void txtLname_TextChanged(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || txtName.Text == null)
+            /*if (txtName.Text == "" || txtName.Text == null)
             {
                 btnViewDeposit.Enabled = false;
                 btnViewWithdrawal.Enabled = false;
@@ -39,12 +39,12 @@ namespace CashSystem.general
                 btnViewDebit.Enabled = true;
                 btnViewCredited.Enabled = true;
                 btnViewAllTransact.Enabled = true;
-            }
+            }*/
         }
 
         private void AccountTransaction_Load(object sender, EventArgs e)
         {
-            if (txtName.Text == "")
+           /* if (txtName.Text == "")
             {
                 btnViewDeposit.Enabled = false;
                 btnViewWithdrawal.Enabled = false;
@@ -59,13 +59,13 @@ namespace CashSystem.general
                 btnViewDebit.Enabled = true;
                 btnViewCredited.Enabled = true;
                 btnViewAllTransact.Enabled = true;
-            }
+            }*/
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllForms.detailsAccountForm1.Show();
+            AllForms.customerBoard.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

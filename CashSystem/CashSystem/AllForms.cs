@@ -41,5 +41,7 @@ namespace CashSystem
         public static CustomerHome customerHome = new CustomerHome();
         public static CustomerWithdraw customerWithdraw = new CustomerWithdraw();
 
+        public static CustomerBoard customerBoard = new CustomerBoard();
+
     }
 }

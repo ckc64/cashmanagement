@@ -58,7 +58,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtProductsServices = new System.Windows.Forms.TextBox();
             this.chkSavings = new System.Windows.Forms.CheckBox();
             this.chkATM = new System.Windows.Forms.CheckBox();
             this.chkRegular = new System.Windows.Forms.CheckBox();
@@ -85,11 +84,21 @@
             this.txtSpouseName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label22
@@ -463,7 +472,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.txtProductsServices);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.groupBox4);
+            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Controls.Add(this.chkSavings);
             this.panel3.Controls.Add(this.chkATM);
             this.panel3.Controls.Add(this.chkRegular);
@@ -471,49 +483,38 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(622, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 181);
+            this.panel3.Size = new System.Drawing.Size(296, 191);
             this.panel3.TabIndex = 49;
-            // 
-            // txtProductsServices
-            // 
-            this.txtProductsServices.BackColor = System.Drawing.Color.White;
-            this.txtProductsServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProductsServices.Enabled = false;
-            this.txtProductsServices.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductsServices.Location = new System.Drawing.Point(6, 112);
-            this.txtProductsServices.Multiline = true;
-            this.txtProductsServices.Name = "txtProductsServices";
-            this.txtProductsServices.Size = new System.Drawing.Size(283, 57);
-            this.txtProductsServices.TabIndex = 49;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // chkSavings
             // 
             this.chkSavings.AutoSize = true;
-            this.chkSavings.Location = new System.Drawing.Point(6, 89);
+            this.chkSavings.Location = new System.Drawing.Point(6, 109);
             this.chkSavings.Name = "chkSavings";
-            this.chkSavings.Size = new System.Drawing.Size(283, 17);
+            this.chkSavings.Size = new System.Drawing.Size(181, 17);
             this.chkSavings.TabIndex = 52;
-            this.chkSavings.Text = "Savings Payroll Account Prepaid/Debit Card Accounts";
+            this.chkSavings.Text = "Certificate of Time Deposit (CTD)";
             this.chkSavings.UseVisualStyleBackColor = true;
             // 
             // chkATM
             // 
             this.chkATM.AutoSize = true;
-            this.chkATM.Location = new System.Drawing.Point(6, 66);
+            this.chkATM.Location = new System.Drawing.Point(6, 92);
             this.chkATM.Name = "chkATM";
-            this.chkATM.Size = new System.Drawing.Size(129, 17);
+            this.chkATM.Size = new System.Drawing.Size(142, 17);
             this.chkATM.TabIndex = 51;
-            this.chkATM.Text = "ATM Savings Deposit";
+            this.chkATM.Text = "Current Deposit Account";
             this.chkATM.UseVisualStyleBackColor = true;
             // 
             // chkRegular
             // 
             this.chkRegular.AutoSize = true;
-            this.chkRegular.Location = new System.Drawing.Point(6, 43);
+            this.chkRegular.Location = new System.Drawing.Point(6, 38);
             this.chkRegular.Name = "chkRegular";
-            this.chkRegular.Size = new System.Drawing.Size(229, 17);
+            this.chkRegular.Size = new System.Drawing.Size(103, 17);
             this.chkRegular.TabIndex = 50;
-            this.chkRegular.Text = "Regular Savings Deposit(Passbook-Based)";
+            this.chkRegular.Text = "Savings Deposit";
             this.chkRegular.UseVisualStyleBackColor = true;
             // 
             // label20
@@ -568,7 +569,7 @@
             "Pick-up",
             "Mail to Present Address",
             "Email"});
-            this.cmbMonthlyStatement.Location = new System.Drawing.Point(379, 523);
+            this.cmbMonthlyStatement.Location = new System.Drawing.Point(370, 500);
             this.cmbMonthlyStatement.Name = "cmbMonthlyStatement";
             this.cmbMonthlyStatement.Size = new System.Drawing.Size(138, 24);
             this.cmbMonthlyStatement.TabIndex = 70;
@@ -578,7 +579,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(378, 495);
+            this.label10.Location = new System.Drawing.Point(369, 472);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(204, 21);
             this.label10.TabIndex = 69;
@@ -779,6 +780,90 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Civil Status";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Location = new System.Drawing.Point(6, 55);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(136, 31);
+            this.groupBox3.TabIndex = 53;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(5, 9);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(72, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Passbook";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(85, 9);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(48, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "ATM";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 127);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(57, 17);
+            this.checkBox1.TabIndex = 54;
+            this.checkBox1.Text = "Others";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.radioButton3);
+            this.groupBox4.Controls.Add(this.radioButton4);
+            this.groupBox4.Location = new System.Drawing.Point(148, 55);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(136, 31);
+            this.groupBox4.TabIndex = 54;
+            this.groupBox4.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(64, 9);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(68, 17);
+            this.radioButton3.TabIndex = 1;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "DOLLAR";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(4, 9);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(54, 17);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "PESO";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 145);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(284, 38);
+            this.textBox1.TabIndex = 55;
+            // 
             // OpenAccountForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -801,6 +886,10 @@
             this.groupBox2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -852,7 +941,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtProductsServices;
         private System.Windows.Forms.CheckBox chkSavings;
         private System.Windows.Forms.CheckBox chkATM;
         private System.Windows.Forms.CheckBox chkRegular;
@@ -865,5 +953,13 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbtnNo1;
         private System.Windows.Forms.RadioButton rbtnYes1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
