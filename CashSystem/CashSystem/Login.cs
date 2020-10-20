@@ -21,37 +21,40 @@ namespace CashSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            /*SqlDataAdapter sda = new SqlDataAdapter(queries.userCredQuery("Select", txtUsername.Text, txtPassword.Text), connection.sqlCon);
-            DataTable dataTable = new DataTable();
-            sda.Fill(dataTable);
-            try
-            {
-                /// conn.checkConnectionState(); //<1---- nasa connection.cs
-                if (dataTable.Rows.Count == 1)
-                {
+            ///connection is set as public static on the connection.cs class for easy access and 
+            ///to prevent typing lots of OLEDB DATA
+            try {
+                connection.sqlCon.Open();
 
-                    this.Hide();
-                    AllForms.adminDashBoard.Show();
+                connection.command.Connection = connection.sqlCon;
+                connection.command.CommandText = "Select * from users where username='"+txtUsername.Text+"' and userpass='"+txtPassword.Text+"'";
+                connection.reader  = connection.command.ExecuteReader();
+
+                int count = 0;
+                while (connection.reader.Read())
+                {
+                    count++;
 
                 }
-                else if (txtPassword.Text == "" || txtUsername.Text == "")
+                if(count == 1)
                 {
-                    MessageBox.Show("Username or Password is empty.");
+
+                    MessageBox.Show("user and pass correct");
+                    this.Hide();
+                    AllForms.adminDashBoard.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Please contact the admin to check");
+                    MessageBox.Show("user and pass incorrect");
                 }
-
-           
-
-
+                connection.sqlCon.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Login Form Error : " + ex.Message);
-            }*/
-            AllForms.adminDashBoard.Show();
+                MessageBox.Show("Error Login Form " + ex);
+            }
+         
+           
         }
     }
 }

@@ -55,3 +55,4 @@ D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.customer.Cus
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllAccountsForm.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.AllTransactions.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.general.CustomerBoard.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\Debug\CashSystem.admin.OpenAccountForm3.resources

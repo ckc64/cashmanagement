@@ -41,6 +41,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtEmployerAddr = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSecBeneficiary = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbtnNo2 = new System.Windows.Forms.RadioButton();
             this.rbtnYes2 = new System.Windows.Forms.RadioButton();
@@ -58,12 +60,20 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtTypesOfProducts = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.chkSavings = new System.Windows.Forms.CheckBox();
             this.chkATM = new System.Windows.Forms.CheckBox();
             this.chkRegular = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtBeneficiary = new System.Windows.Forms.TextBox();
+            this.txtPrimBeneficiary = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbMonthlyStatement = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -84,21 +94,13 @@
             this.txtSpouseName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label22
@@ -124,6 +126,7 @@
             this.btnSave.TabIndex = 54;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel2
             // 
@@ -241,6 +244,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtSecBeneficiary);
+            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.txtPosition2);
@@ -254,7 +259,7 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.txtBeneficiary);
+            this.panel1.Controls.Add(this.txtPrimBeneficiary);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.cmbMonthlyStatement);
             this.panel1.Controls.Add(this.label10);
@@ -284,6 +289,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(955, 606);
             this.panel1.TabIndex = 6;
+            // 
+            // txtSecBeneficiary
+            // 
+            this.txtSecBeneficiary.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSecBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSecBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecBeneficiary.Location = new System.Drawing.Point(321, 298);
+            this.txtSecBeneficiary.Multiline = true;
+            this.txtSecBeneficiary.Name = "txtSecBeneficiary";
+            this.txtSecBeneficiary.Size = new System.Drawing.Size(267, 21);
+            this.txtSecBeneficiary.TabIndex = 92;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(317, 270);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(181, 21);
+            this.label26.TabIndex = 91;
+            this.label26.Text = "Secondary Beneficiary";
             // 
             // groupBox1
             // 
@@ -472,7 +499,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtTypesOfProducts);
             this.panel3.Controls.Add(this.groupBox4);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.groupBox3);
@@ -486,6 +513,90 @@
             this.panel3.Size = new System.Drawing.Size(296, 191);
             this.panel3.TabIndex = 49;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // txtTypesOfProducts
+            // 
+            this.txtTypesOfProducts.Location = new System.Drawing.Point(6, 149);
+            this.txtTypesOfProducts.Multiline = true;
+            this.txtTypesOfProducts.Name = "txtTypesOfProducts";
+            this.txtTypesOfProducts.Size = new System.Drawing.Size(284, 35);
+            this.txtTypesOfProducts.TabIndex = 55;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.radioButton3);
+            this.groupBox4.Controls.Add(this.radioButton4);
+            this.groupBox4.Location = new System.Drawing.Point(148, 55);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(136, 31);
+            this.groupBox4.TabIndex = 54;
+            this.groupBox4.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(64, 9);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(68, 17);
+            this.radioButton3.TabIndex = 1;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "DOLLAR";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(4, 9);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(54, 17);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "PESO";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 127);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(57, 17);
+            this.checkBox1.TabIndex = 54;
+            this.checkBox1.Text = "Others";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Location = new System.Drawing.Point(6, 55);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(136, 31);
+            this.groupBox3.TabIndex = 53;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(85, 9);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(48, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "ATM";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(5, 9);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(72, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Passbook";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // chkSavings
             // 
@@ -539,16 +650,16 @@
             this.label15.TabIndex = 48;
             this.label15.Text = "Types of Products and Services to be\r\navailed from the Bank\r\n";
             // 
-            // txtBeneficiary
+            // txtPrimBeneficiary
             // 
-            this.txtBeneficiary.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeneficiary.Location = new System.Drawing.Point(321, 235);
-            this.txtBeneficiary.Multiline = true;
-            this.txtBeneficiary.Name = "txtBeneficiary";
-            this.txtBeneficiary.Size = new System.Drawing.Size(267, 21);
-            this.txtBeneficiary.TabIndex = 72;
+            this.txtPrimBeneficiary.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPrimBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrimBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrimBeneficiary.Location = new System.Drawing.Point(321, 235);
+            this.txtPrimBeneficiary.Multiline = true;
+            this.txtPrimBeneficiary.Name = "txtPrimBeneficiary";
+            this.txtPrimBeneficiary.Size = new System.Drawing.Size(267, 21);
+            this.txtPrimBeneficiary.TabIndex = 72;
             // 
             // label13
             // 
@@ -557,9 +668,9 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(317, 207);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 21);
+            this.label13.Size = new System.Drawing.Size(154, 21);
             this.label13.TabIndex = 71;
-            this.label13.Text = "Beneficiary";
+            this.label13.Text = "Primary Beneficiary";
             // 
             // cmbMonthlyStatement
             // 
@@ -780,90 +891,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Civil Status";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 55);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(136, 31);
-            this.groupBox3.TabIndex = 53;
-            this.groupBox3.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(5, 9);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Passbook";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(85, 9);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ATM";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 127);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 17);
-            this.checkBox1.TabIndex = 54;
-            this.checkBox1.Text = "Others";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.radioButton4);
-            this.groupBox4.Location = new System.Drawing.Point(148, 55);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(136, 31);
-            this.groupBox4.TabIndex = 54;
-            this.groupBox4.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(64, 9);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 17);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "DOLLAR";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(4, 9);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(54, 17);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "PESO";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 145);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(284, 38);
-            this.textBox1.TabIndex = 55;
-            // 
             // OpenAccountForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -886,10 +913,10 @@
             this.groupBox2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -915,7 +942,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMMaidenName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBeneficiary;
+        private System.Windows.Forms.TextBox txtPrimBeneficiary;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbMonthlyStatement;
         private System.Windows.Forms.Label label10;
@@ -960,6 +987,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTypesOfProducts;
+        private System.Windows.Forms.TextBox txtSecBeneficiary;
+        private System.Windows.Forms.Label label26;
     }
 }
