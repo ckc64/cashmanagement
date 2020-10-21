@@ -48,6 +48,11 @@ namespace CashSystem.classes
 
         private static String accNumber;
 
+        private static String isATM;
+        private static String isPassbook;
+        private static String isDollar;
+        private static String isPeso;
+
         public static string LastName { get => lastName; set => lastName = value; }
         public static string FirstName { get => firstName; set => firstName = value; }
         public static string MiddleName { get => middleName; set => middleName = value; }
@@ -82,5 +87,9 @@ namespace CashSystem.classes
         public static string SpouseProminentPosition { get => spouseProminentPosition; set => spouseProminentPosition = value; }
         public static int CurrentBalance { get => currentBalance; set => currentBalance = value; }
         public static string AccNumber { get => accNumber; set => accNumber = value; }
+        public static string IsATM { get => isATM; set => isATM = value; }
+        public static string IsPassbook { get => isPassbook; set => isPassbook = value; }
+        public static string IsDollar { get => isDollar; set => isDollar = value; }
+        public static string IsPeso { get => isPeso; set => isPeso = value; }
     }
 }

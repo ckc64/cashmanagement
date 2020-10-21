@@ -62,15 +62,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTypesOfProducts = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rbtnDOLLAR = new System.Windows.Forms.RadioButton();
+            this.rbtnPESO = new System.Windows.Forms.RadioButton();
+            this.chkOthers = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.chkSavings = new System.Windows.Forms.CheckBox();
-            this.chkATM = new System.Windows.Forms.CheckBox();
-            this.chkRegular = new System.Windows.Forms.CheckBox();
+            this.rbtnATM = new System.Windows.Forms.RadioButton();
+            this.rbtnPassbook = new System.Windows.Forms.RadioButton();
+            this.chkCertifcateTimeDep = new System.Windows.Forms.CheckBox();
+            this.chkCurrentDepAcc = new System.Windows.Forms.CheckBox();
+            this.chkSavingsDep = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtPrimBeneficiary = new System.Windows.Forms.TextBox();
@@ -289,6 +289,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(955, 606);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtSecBeneficiary
             // 
@@ -501,11 +502,11 @@
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.txtTypesOfProducts);
             this.panel3.Controls.Add(this.groupBox4);
-            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.chkOthers);
             this.panel3.Controls.Add(this.groupBox3);
-            this.panel3.Controls.Add(this.chkSavings);
-            this.panel3.Controls.Add(this.chkATM);
-            this.panel3.Controls.Add(this.chkRegular);
+            this.panel3.Controls.Add(this.chkCertifcateTimeDep);
+            this.panel3.Controls.Add(this.chkCurrentDepAcc);
+            this.panel3.Controls.Add(this.chkSavingsDep);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(622, 36);
@@ -521,112 +522,121 @@
             this.txtTypesOfProducts.Name = "txtTypesOfProducts";
             this.txtTypesOfProducts.Size = new System.Drawing.Size(284, 35);
             this.txtTypesOfProducts.TabIndex = 55;
+            this.txtTypesOfProducts.TextChanged += new System.EventHandler(this.txtTypesOfProducts_TextChanged);
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.radioButton4);
+            this.groupBox4.Controls.Add(this.rbtnDOLLAR);
+            this.groupBox4.Controls.Add(this.rbtnPESO);
             this.groupBox4.Location = new System.Drawing.Point(148, 55);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(136, 31);
             this.groupBox4.TabIndex = 54;
             this.groupBox4.TabStop = false;
             // 
-            // radioButton3
+            // rbtnDOLLAR
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(64, 9);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 17);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "DOLLAR";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbtnDOLLAR.AutoSize = true;
+            this.rbtnDOLLAR.Location = new System.Drawing.Point(64, 9);
+            this.rbtnDOLLAR.Name = "rbtnDOLLAR";
+            this.rbtnDOLLAR.Size = new System.Drawing.Size(68, 17);
+            this.rbtnDOLLAR.TabIndex = 1;
+            this.rbtnDOLLAR.TabStop = true;
+            this.rbtnDOLLAR.Text = "DOLLAR";
+            this.rbtnDOLLAR.UseVisualStyleBackColor = true;
+            this.rbtnDOLLAR.CheckedChanged += new System.EventHandler(this.rbtnDOLLAR_CheckedChanged);
             // 
-            // radioButton4
+            // rbtnPESO
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(4, 9);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(54, 17);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "PESO";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbtnPESO.AutoSize = true;
+            this.rbtnPESO.Location = new System.Drawing.Point(4, 9);
+            this.rbtnPESO.Name = "rbtnPESO";
+            this.rbtnPESO.Size = new System.Drawing.Size(54, 17);
+            this.rbtnPESO.TabIndex = 0;
+            this.rbtnPESO.TabStop = true;
+            this.rbtnPESO.Text = "PESO";
+            this.rbtnPESO.UseVisualStyleBackColor = true;
+            this.rbtnPESO.CheckedChanged += new System.EventHandler(this.rbtnPESO_CheckedChanged);
             // 
-            // checkBox1
+            // chkOthers
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 127);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 17);
-            this.checkBox1.TabIndex = 54;
-            this.checkBox1.Text = "Others";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkOthers.AutoSize = true;
+            this.chkOthers.Location = new System.Drawing.Point(6, 127);
+            this.chkOthers.Name = "chkOthers";
+            this.chkOthers.Size = new System.Drawing.Size(57, 17);
+            this.chkOthers.TabIndex = 54;
+            this.chkOthers.Text = "Others";
+            this.chkOthers.UseVisualStyleBackColor = true;
+            this.chkOthers.CheckedChanged += new System.EventHandler(this.chkOthers_CheckedChanged);
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.rbtnATM);
+            this.groupBox3.Controls.Add(this.rbtnPassbook);
             this.groupBox3.Location = new System.Drawing.Point(6, 55);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(136, 31);
             this.groupBox3.TabIndex = 53;
             this.groupBox3.TabStop = false;
             // 
-            // radioButton2
+            // rbtnATM
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(85, 9);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ATM";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnATM.AutoSize = true;
+            this.rbtnATM.Location = new System.Drawing.Point(85, 9);
+            this.rbtnATM.Name = "rbtnATM";
+            this.rbtnATM.Size = new System.Drawing.Size(48, 17);
+            this.rbtnATM.TabIndex = 1;
+            this.rbtnATM.TabStop = true;
+            this.rbtnATM.Text = "ATM";
+            this.rbtnATM.UseVisualStyleBackColor = true;
+            this.rbtnATM.CheckedChanged += new System.EventHandler(this.rbtnATM_CheckedChanged);
             // 
-            // radioButton1
+            // rbtnPassbook
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(5, 9);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Passbook";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnPassbook.AutoSize = true;
+            this.rbtnPassbook.Location = new System.Drawing.Point(5, 9);
+            this.rbtnPassbook.Name = "rbtnPassbook";
+            this.rbtnPassbook.Size = new System.Drawing.Size(72, 17);
+            this.rbtnPassbook.TabIndex = 0;
+            this.rbtnPassbook.TabStop = true;
+            this.rbtnPassbook.Text = "Passbook";
+            this.rbtnPassbook.UseVisualStyleBackColor = true;
+            this.rbtnPassbook.CheckedChanged += new System.EventHandler(this.rbtnPassbook_CheckedChanged);
             // 
-            // chkSavings
+            // chkCertifcateTimeDep
             // 
-            this.chkSavings.AutoSize = true;
-            this.chkSavings.Location = new System.Drawing.Point(6, 109);
-            this.chkSavings.Name = "chkSavings";
-            this.chkSavings.Size = new System.Drawing.Size(181, 17);
-            this.chkSavings.TabIndex = 52;
-            this.chkSavings.Text = "Certificate of Time Deposit (CTD)";
-            this.chkSavings.UseVisualStyleBackColor = true;
+            this.chkCertifcateTimeDep.AutoSize = true;
+            this.chkCertifcateTimeDep.Location = new System.Drawing.Point(6, 109);
+            this.chkCertifcateTimeDep.Name = "chkCertifcateTimeDep";
+            this.chkCertifcateTimeDep.Size = new System.Drawing.Size(181, 17);
+            this.chkCertifcateTimeDep.TabIndex = 52;
+            this.chkCertifcateTimeDep.Text = "Certificate of Time Deposit (CTD)";
+            this.chkCertifcateTimeDep.UseVisualStyleBackColor = true;
+            this.chkCertifcateTimeDep.CheckedChanged += new System.EventHandler(this.chkCertifcateTimeDep_CheckedChanged);
             // 
-            // chkATM
+            // chkCurrentDepAcc
             // 
-            this.chkATM.AutoSize = true;
-            this.chkATM.Location = new System.Drawing.Point(6, 92);
-            this.chkATM.Name = "chkATM";
-            this.chkATM.Size = new System.Drawing.Size(142, 17);
-            this.chkATM.TabIndex = 51;
-            this.chkATM.Text = "Current Deposit Account";
-            this.chkATM.UseVisualStyleBackColor = true;
+            this.chkCurrentDepAcc.AutoSize = true;
+            this.chkCurrentDepAcc.Location = new System.Drawing.Point(6, 92);
+            this.chkCurrentDepAcc.Name = "chkCurrentDepAcc";
+            this.chkCurrentDepAcc.Size = new System.Drawing.Size(142, 17);
+            this.chkCurrentDepAcc.TabIndex = 51;
+            this.chkCurrentDepAcc.Text = "Current Deposit Account";
+            this.chkCurrentDepAcc.UseVisualStyleBackColor = true;
+            this.chkCurrentDepAcc.CheckedChanged += new System.EventHandler(this.chkCurrentDepAcc_CheckedChanged);
             // 
-            // chkRegular
+            // chkSavingsDep
             // 
-            this.chkRegular.AutoSize = true;
-            this.chkRegular.Location = new System.Drawing.Point(6, 38);
-            this.chkRegular.Name = "chkRegular";
-            this.chkRegular.Size = new System.Drawing.Size(103, 17);
-            this.chkRegular.TabIndex = 50;
-            this.chkRegular.Text = "Savings Deposit";
-            this.chkRegular.UseVisualStyleBackColor = true;
+            this.chkSavingsDep.AutoSize = true;
+            this.chkSavingsDep.Location = new System.Drawing.Point(6, 38);
+            this.chkSavingsDep.Name = "chkSavingsDep";
+            this.chkSavingsDep.Size = new System.Drawing.Size(103, 17);
+            this.chkSavingsDep.TabIndex = 50;
+            this.chkSavingsDep.Text = "Savings Deposit";
+            this.chkSavingsDep.UseVisualStyleBackColor = true;
+            this.chkSavingsDep.CheckedChanged += new System.EventHandler(this.chkSavingsDep_CheckedChanged);
             // 
             // label20
             // 
@@ -903,6 +913,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "OpenAccountForm2";
             this.Text = "OpenAccountForm2";
+            this.Load += new System.EventHandler(this.OpenAccountForm2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -968,9 +979,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox chkSavings;
-        private System.Windows.Forms.CheckBox chkATM;
-        private System.Windows.Forms.CheckBox chkRegular;
+        private System.Windows.Forms.CheckBox chkCertifcateTimeDep;
+        private System.Windows.Forms.CheckBox chkCurrentDepAcc;
+        private System.Windows.Forms.CheckBox chkSavingsDep;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnCancel;
@@ -981,12 +992,12 @@
         private System.Windows.Forms.RadioButton rbtnNo1;
         private System.Windows.Forms.RadioButton rbtnYes1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RadioButton rbtnDOLLAR;
+        private System.Windows.Forms.RadioButton rbtnPESO;
+        private System.Windows.Forms.CheckBox chkOthers;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbtnATM;
+        private System.Windows.Forms.RadioButton rbtnPassbook;
         private System.Windows.Forms.TextBox txtTypesOfProducts;
         private System.Windows.Forms.TextBox txtSecBeneficiary;
         private System.Windows.Forms.Label label26;

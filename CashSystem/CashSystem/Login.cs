@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -25,10 +26,10 @@ namespace CashSystem
             ///to prevent typing lots of OLEDB DATA
             try {
                 connection.sqlCon.Open();
-
-                connection.command.Connection = connection.sqlCon;
-                connection.command.CommandText = "Select * from users where username='"+txtUsername.Text+"' and userpass='"+txtPassword.Text+"'";
-                connection.reader  = connection.command.ExecuteReader();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection.sqlCon;
+                command.CommandText = "Select * from users where username='"+txtUsername.Text+"' and userpass='"+txtPassword.Text+"'";
+                connection.reader  = command.ExecuteReader();
 
                 int count = 0;
                 while (connection.reader.Read())

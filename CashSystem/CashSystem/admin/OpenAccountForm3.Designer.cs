@@ -51,7 +51,7 @@
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Location = new System.Drawing.Point(25, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 308);
+            this.panel1.Size = new System.Drawing.Size(334, 252);
             this.panel1.TabIndex = 33;
             // 
             // label1
@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(10, 146);
+            this.label1.Location = new System.Drawing.Point(10, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 22);
             this.label1.TabIndex = 33;
@@ -69,13 +69,13 @@
             // 
             this.txtInitialDeposit.BackColor = System.Drawing.SystemColors.Control;
             this.txtInitialDeposit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInitialDeposit.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInitialDeposit.Location = new System.Drawing.Point(14, 171);
-            this.txtInitialDeposit.Multiline = true;
+            this.txtInitialDeposit.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInitialDeposit.Location = new System.Drawing.Point(14, 139);
+            this.txtInitialDeposit.MaxLength = 9;
             this.txtInitialDeposit.Name = "txtInitialDeposit";
-            this.txtInitialDeposit.Size = new System.Drawing.Size(308, 40);
+            this.txtInitialDeposit.Size = new System.Drawing.Size(308, 30);
             this.txtInitialDeposit.TabIndex = 32;
-            this.txtInitialDeposit.Text = "S";
+            this.txtInitialDeposit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInitialDeposit_KeyPress);
             // 
             // btnSave
             // 
@@ -83,7 +83,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(14, 230);
+            this.btnSave.Location = new System.Drawing.Point(14, 175);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(308, 60);
             this.btnSave.TabIndex = 31;
@@ -117,30 +117,31 @@
             // 
             this.txtAccNum.BackColor = System.Drawing.SystemColors.Control;
             this.txtAccNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAccNum.Enabled = false;
             this.txtAccNum.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccNum.Location = new System.Drawing.Point(14, 42);
-            this.txtAccNum.Multiline = true;
             this.txtAccNum.Name = "txtAccNum";
-            this.txtAccNum.Size = new System.Drawing.Size(308, 21);
+            this.txtAccNum.Size = new System.Drawing.Size(308, 20);
             this.txtAccNum.TabIndex = 25;
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.SystemColors.Control;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Enabled = false;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(14, 91);
-            this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(308, 28);
+            this.txtName.Size = new System.Drawing.Size(308, 20);
             this.txtName.TabIndex = 26;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // OpenAccountForm3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(384, 351);
+            this.ClientSize = new System.Drawing.Size(384, 288);
             this.Controls.Add(this.panel1);
             this.Name = "OpenAccountForm3";
             this.Text = "OpenAccountForm3";

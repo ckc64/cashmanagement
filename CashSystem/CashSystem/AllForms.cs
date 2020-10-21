@@ -19,6 +19,7 @@ namespace CashSystem
         //OPEN ACCOUNT FORMS
         public static OpenAccountForm1 openAccountForm1 = new OpenAccountForm1();
         public static OpenAccountForm2 openAccountForm2 = new OpenAccountForm2();
+        public static OpenAccountForm3 openAccountForm3 = new OpenAccountForm3();
 
         //Create new account
         public static AccountsForm accountsForm = new AccountsForm();
