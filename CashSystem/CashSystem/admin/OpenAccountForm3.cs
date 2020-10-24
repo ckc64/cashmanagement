@@ -66,18 +66,18 @@ namespace CashSystem.admin
             {
 
                 String saveToClientProf = "INSERT INTO clientproftbl " +
-                "(accnum,civilstatus,gender,typeofid,idnumber,spousename,mmname,empbusinessaddr,emergencyname,emergencynum," +
-                "primbeneficiary,secbeneficiary,jobtitleposition,purposeofaccopening,mbankstatement,topavailed,isatm,ispassbook,ispeso,isdollar,govpromposition,spousegovpromposition,datejoin)" +
-                "VALUES ('" + EmployeeInfo.AccNumber + "','" + EmployeeInfo.CivilStatus + "','" + EmployeeInfo.Gender + "'" +
-                ",'" + EmployeeInfo.TypeOfID + "','" + EmployeeInfo.IdNumber + "','" + EmployeeInfo.SpouseName + "'" +
-                ",'" + EmployeeInfo.MotherMaidenName + "','" + EmployeeInfo.EmployerBusinessAddr + "','" + EmployeeInfo.EmergencyContactName + "'" +
-                ",'" + EmployeeInfo.EmergencyContactNum + "','" + EmployeeInfo.PrimBeneficiary + "','" + EmployeeInfo.SecBeneficiary + "'" +
-                ",'" + EmployeeInfo.JobTitlePosition + "','" + EmployeeInfo.PurposeOfAccOpening + "','" + EmployeeInfo.MonthlyBankStatement + "'" +
-                ",'" + EmployeeInfo.TypesOfProductsAvailed + "'" + EmployeeInfo.IsATM + "'" + EmployeeInfo.IsPassbook + "'" + EmployeeInfo.IsPeso + "'" + EmployeeInfo.IsDollar +
-                ",'" + EmployeeInfo.ProminentPosition + "','" + EmployeeInfo.SpouseProminentPosition + "','" + DateTime.Now + "')";
+                       "(accnum,civilstatus,gender,typeofid,idnumber,spousename,mmname,empbusinessaddr,emergencyname,emergencynum," +
+                       "primbeneficiary,secbeneficiary,jobtitleposition,purposeofaccopening,mbankstatement,topavailed,isatm,ispassbook,ispeso,isdollar,govpromposition,spousegovpromposition,datejoin)" +
+                       "VALUES ('" + EmployeeInfo.AccNumber + "','" + EmployeeInfo.CivilStatus + "','" + EmployeeInfo.Gender + "'" +
+                       ",'" + EmployeeInfo.TypeOfID + "','" + EmployeeInfo.IdNumber + "','" + EmployeeInfo.SpouseName + "'" +
+                       ",'" + EmployeeInfo.MotherMaidenName + "','" + EmployeeInfo.EmployerBusinessAddr + "','" + EmployeeInfo.EmergencyContactName + "'" +
+                       ",'" + EmployeeInfo.EmergencyContactNum + "','" + EmployeeInfo.PrimBeneficiary + "','" + EmployeeInfo.SecBeneficiary + "'" +
+                       ",'" + EmployeeInfo.JobTitlePosition + "','" + EmployeeInfo.PurposeOfAccOpening + "','" + EmployeeInfo.MonthlyBankStatement + "'" +
+                       ",'" + EmployeeInfo.TypesOfProductsAvailed + "','" + EmployeeInfo.IsATM + "','" + EmployeeInfo.IsPassbook + "','" + EmployeeInfo.IsPeso + "','" + EmployeeInfo.IsDollar + "'" +
+                       ",'" + EmployeeInfo.ProminentPosition + "','" + EmployeeInfo.SpouseProminentPosition + "','" + DateTime.Now + "')";
 
 
-         
+
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection.sqlCon;
 
@@ -99,8 +99,8 @@ namespace CashSystem.admin
                 String particulars = "Initial Deposit of " + EmployeeInfo.CurrentBalance;
 
                 String saveToCustomerDep = "INSERT INTO customerdeposit " +
-                    "(accnum,amountdep,particular) " +
-                    "VALUES ('" + EmployeeInfo.AccNumber + "','" + EmployeeInfo.CurrentBalance + "','" + particulars + "')";
+                    "(accnum,amountdep,particular,newbalance,datetransact) " +
+                    "VALUES ('" + EmployeeInfo.AccNumber + "','" + EmployeeInfo.CurrentBalance + "','" + particulars + "','"+ EmployeeInfo.CurrentBalance + "','"+DateTime.Now+"')";
 
 
                 OleDbCommand command2 = new OleDbCommand();
@@ -139,8 +139,9 @@ namespace CashSystem.admin
             }
 
 
-            MessageBox.Show("THE CUSTOMER DETAILS IS ALREADY SAVED");
-
+            MessageBox.Show("THE CUSTOMER DETAILS IS ALREADY SAVED","SUCCESS");
+            this.Hide();
+            AllForms.adminDashBoard.Show();
             connection.sqlCon.Close();
 
 
@@ -148,12 +149,12 @@ namespace CashSystem.admin
 
         private void OpenAccountForm3_Load(object sender, EventArgs e)
         {
-            txtName.Text = EmployeeInfo.LastName + ", " + EmployeeInfo.FirstName + ", " + EmployeeInfo.MiddleName + " " + EmployeeInfo.Suffix;
+            txtName.Text = EmployeeInfo.LastName.ToUpper() + ", " + EmployeeInfo.FirstName.ToUpper() + ", " + EmployeeInfo.MiddleName.ToUpper() + " " + EmployeeInfo.Suffix.ToUpper();
             Random generator = new Random();
             char c1 = (char)generator.Next('A', 'Z');
             char c2 = (char)generator.Next('A', 'Z');
             int r = generator.Next(0, 999999);
-            string accNumber = String.Format("UM{1}{0}{2}", r.ToString("D10"),c1,c2);
+            string accNumber = String.Format("UMTC{1}{0}{2}", r.ToString("D10"),c1,c2);
             txtAccNum.Text = accNumber;
         }
 

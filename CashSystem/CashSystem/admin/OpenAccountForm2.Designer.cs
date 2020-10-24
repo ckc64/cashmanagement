@@ -41,6 +41,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtEmployerAddr = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
             this.txtSecBeneficiary = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -107,12 +108,12 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(200, 55);
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(144, 209);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(264, 17);
+            this.label22.Size = new System.Drawing.Size(100, 17);
             this.label22.TabIndex = 7;
-            this.label22.Text = "Note* All forms can be blank and edit later.";
+            this.label22.Text = "(can be empty)";
             // 
             // btnSave
             // 
@@ -124,7 +125,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(159, 41);
             this.btnSave.TabIndex = 54;
-            this.btnSave.Text = "SAVE";
+            this.btnSave.Text = "PROCEED";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -244,6 +245,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.txtSecBeneficiary);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.groupBox1);
@@ -290,6 +293,17 @@
             this.panel1.Size = new System.Drawing.Size(955, 606);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(159, 462);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(143, 17);
+            this.label27.TabIndex = 93;
+            this.label27.Text = "(put student if student)";
             // 
             // txtSecBeneficiary
             // 
@@ -348,6 +362,7 @@
             this.rbtnYes2.TabStop = true;
             this.rbtnYes2.Text = "Yes";
             this.rbtnYes2.UseVisualStyleBackColor = true;
+            this.rbtnYes2.CheckedChanged += new System.EventHandler(this.rbtnYes2_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -384,6 +399,7 @@
             this.rbtnYes1.TabStop = true;
             this.rbtnYes1.Text = "Yes";
             this.rbtnYes1.UseVisualStyleBackColor = true;
+            this.rbtnYes1.CheckedChanged += new System.EventHandler(this.rbtnYes1_CheckedChanged);
             // 
             // txtPosition2
             // 
@@ -908,7 +924,6 @@
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1004, 716);
             this.ControlBox = false;
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "OpenAccountForm2";
@@ -1001,5 +1016,6 @@
         private System.Windows.Forms.TextBox txtTypesOfProducts;
         private System.Windows.Forms.TextBox txtSecBeneficiary;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }

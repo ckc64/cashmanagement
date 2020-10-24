@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CashSystem.general
 {
-    public partial class WithdrawForm : Form
+    public partial class DepositForm : Form
     {
-        public WithdrawForm()
+        public DepositForm()
         {
             InitializeComponent();
         }
@@ -24,27 +24,26 @@ namespace CashSystem.general
             connection.sqlCon.Open();
             try
             {
-
+                
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection.sqlCon;
-                String particulars = "withdraw " + txtAmountDeposit.Text;
-                command.CommandText = "INSERT INTO customerwithdraw (accnum,amountdep,particular,newbalance,datetransact)" +
-                    "VALUES('" + Searching.AccNumber + "','" + int.Parse(txtAmountDeposit.Text) + "','" + particulars + "','" + (Searching.CurrentBalance + int.Parse(txtAmountDeposit.Text)) + "','" + DateTime.Now + "')";
+                String particulars = " deposited " + txtAmountDeposit.Text;
+                command.CommandText = "INSERT INTO customerdeposit (accnum,amountdep,particular,newbalance,datetransact)" +
+                    "VALUES('" + Searching.AccNumber + "','" + int.Parse(txtAmountDeposit.Text) + "','" + particulars + "','" + (Searching.CurrentBalance + int.Parse(txtAmountDeposit.Text)) + "','"+DateTime.Now+"')";
                 command.ExecuteNonQuery();
-            }
-            catch (Exception ex)
+            }catch(Exception ex)
             {
-                MessageBox.Show("Error adding to customer withdraw table " + ex, "Error");
+                MessageBox.Show("Error adding to customer deposit table " + ex, "Error");
             }
 
             //Update customer balance
             try
             {
-
+              
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection.sqlCon;
 
-                command1.CommandText = "UPDATE customerbalance SET currentbalance= currentbalance-'" + int.Parse(txtAmountDeposit.Text) + "', asof='" + DateTime.Now + "' WHERE accnum = '"+Searching.AccNumber+"'";
+                command1.CommandText = "UPDATE customerbalance SET currentbalance= currentbalance+'" + int.Parse(txtAmountDeposit.Text) + "', asof='" + DateTime.Now + "' WHERE accnum = '" + Searching.AccNumber + "'";
                 command1.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -58,6 +57,16 @@ namespace CashSystem.general
             txtAmountDeposit.Text = "";
             CustomerAccountTransaction cus = new CustomerAccountTransaction();
             cus.Show();
+        }
+
+        private void DepositForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

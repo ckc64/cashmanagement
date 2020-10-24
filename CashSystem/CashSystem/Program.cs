@@ -20,7 +20,7 @@ namespace CashSystem
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CustomerHome());
             Application.Run(new OpenAccountForm2());
-            //Application.Run(new frmLogin());
+           // Application.Run(new frmLogin());
         }
     }
 }

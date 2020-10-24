@@ -144,6 +144,7 @@
             this.ClientSize = new System.Drawing.Size(384, 288);
             this.Controls.Add(this.panel1);
             this.Name = "OpenAccountForm3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OpenAccountForm3";
             this.Load += new System.EventHandler(this.OpenAccountForm3_Load);
             this.panel1.ResumeLayout(false);

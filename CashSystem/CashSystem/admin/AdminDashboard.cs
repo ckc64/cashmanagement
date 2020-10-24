@@ -24,6 +24,7 @@ namespace CashSystem.admin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AllForms.accountsForm.Show();
         }
 

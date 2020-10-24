@@ -132,6 +132,7 @@
       <DependentUpon>cashsystemDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="classes\EmployeeInfo.cs" />
+    <Compile Include="classes\Searching.cs" />
     <Compile Include="connection.cs" />
     <Compile Include="customer\CustomerHome.cs">
       <SubType>Form</SubType>
@@ -151,11 +152,11 @@
     <Compile Include="customer\CustomerDeposit.Designer.cs">
       <DependentUpon>CustomerDeposit.cs</DependentUpon>
     </Compile>
-    <Compile Include="general\CustomerBoard.cs">
+    <Compile Include="general\CustomerAccountTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="general\CustomerBoard.Designer.cs">
-      <DependentUpon>CustomerBoard.cs</DependentUpon>
+    <Compile Include="general\CustomerAccountTransaction.Designer.cs">
+      <DependentUpon>CustomerAccountTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="general\DepositTransaction.cs">
       <SubType>Form</SubType>
@@ -175,11 +176,17 @@
     <Compile Include="general\DetailsAccountForm2.Designer.cs">
       <DependentUpon>DetailsAccountForm2.cs</DependentUpon>
     </Compile>
-    <Compile Include="general\AccountTransaction.cs">
+    <Compile Include="general\DepositForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="general\AccountTransaction.Designer.cs">
-      <DependentUpon>AccountTransaction.cs</DependentUpon>
+    <Compile Include="general\DepositForm.Designer.cs">
+      <DependentUpon>DepositForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="general\SearchAccountTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general\SearchAccountTransaction.Designer.cs">
+      <DependentUpon>SearchAccountTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="general\AllAccountsForm.cs">
       <SubType>Form</SubType>
@@ -240,8 +247,11 @@
     <EmbeddedResource Include="customer\CustomerDeposit.resx">
       <DependentUpon>CustomerDeposit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="general\CustomerBoard.resx">
-      <DependentUpon>CustomerBoard.cs</DependentUpon>
+    <EmbeddedResource Include="general\CustomerAccountTransaction.resx">
+      <DependentUpon>CustomerAccountTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\DepositForm.resx">
+      <DependentUpon>DepositForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="general\DepositTransaction.resx">
       <DependentUpon>DepositTransaction.cs</DependentUpon>
@@ -252,8 +262,8 @@
     <EmbeddedResource Include="general\DetailsAccountForm2.resx">
       <DependentUpon>DetailsAccountForm2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="general\AccountTransaction.resx">
-      <DependentUpon>AccountTransaction.cs</DependentUpon>
+    <EmbeddedResource Include="general\SearchAccountTransaction.resx">
+      <DependentUpon>SearchAccountTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="general\AllAccountsForm.resx">
       <DependentUpon>AllAccountsForm.cs</DependentUpon>

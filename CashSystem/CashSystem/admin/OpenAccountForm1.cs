@@ -47,13 +47,47 @@ namespace CashSystem.admin
             EmployeeInfo.SourceOfFunds = txtSourceOfFunds.Text;
             EmployeeInfo.Tinssgsisumidno = txtTinIDNo.Text;
            
-            this.Hide();
-            AllForms.openAccountForm2.Show();
+          
+
+            if (EmployeeInfo.LastName == "" ||
+            EmployeeInfo.FirstName == "" ||
+            EmployeeInfo.MiddleName == "" ||
+           
+            EmployeeInfo.DateOfBirth == "" ||
+            EmployeeInfo.PlaceOfBirth == "" ||
+            EmployeeInfo.PresentAddress == "" ||
+            EmployeeInfo.PermanentAddress == "" ||
+            EmployeeInfo.ContactNum == "" ||
+            EmployeeInfo.EmailAddress == "" ||
+            EmployeeInfo.Nationality == "" ||
+            EmployeeInfo.NatureOfEmployment == "" ||
+            EmployeeInfo.NameOfEmployer == "" ||
+            EmployeeInfo.SourceOfFunds == "" ||
+            EmployeeInfo.Tinssgsisumidno == "")
+            {
+                MessageBox.Show("Some of the fields are empty.\nPlease check the empty fields before to proceed.", "Error");
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you sure all the fields are correct ?", "Message", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    this.Hide();
+                    AllForms.openAccountForm2.Show();
+                }
+               
+            }
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to cancel ?", "Message", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Hide();
+                AllForms.adminDashBoard.Show();
+            }
         }
 
         private void txtYear_KeyPress(object sender, KeyPressEventArgs e)

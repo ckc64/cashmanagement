@@ -12,7 +12,7 @@ namespace CashSystem
     static class AllForms
     {
         public static AdminDashboard adminDashBoard = new AdminDashboard();
-        public static WithdrawForm withdrawForm = new WithdrawForm();
+      
         public static frmLogin login = new frmLogin();
         public static EmployeeCreateAccount createAccountEmployee = new EmployeeCreateAccount();
 
@@ -28,7 +28,7 @@ namespace CashSystem
         public static SearchForm searchForm = new SearchForm();
 
         //Transactions
-        public static AccountTransaction accountTransaction = new AccountTransaction();
+        public static SearchAccountTransaction accountTransaction = new SearchAccountTransaction();
         public static WithdrawalTransaction withdrawalTransaction = new WithdrawalTransaction();
         public static DepositTransaction depositTransaction = new DepositTransaction();
         public static AllTransactions allTransactions = new AllTransactions();
@@ -42,7 +42,13 @@ namespace CashSystem
         public static CustomerHome customerHome = new CustomerHome();
         public static CustomerWithdraw customerWithdraw = new CustomerWithdraw();
 
-        public static CustomerBoard customerBoard = new CustomerBoard();
+        public static CustomerAccountTransaction customerBoard = new CustomerAccountTransaction();
+
+        //dEPOSIT
+        public static DepositForm depositForm = new DepositForm();
+
+        //WITHDRAW
+        public static WithdrawForm withdrawForm = new WithdrawForm();
 
     }
 }

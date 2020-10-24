@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,7 @@ namespace CashSystem.admin
     public partial class OpenAccountForm2 : Form
     {
 
-        String currency = "";
-        String type = "";
+       
         public OpenAccountForm2()
         {
             InitializeComponent();
@@ -23,7 +23,14 @@ namespace CashSystem.admin
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
+
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to cancel ?", "Message", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Hide();
+                AllForms.adminDashBoard.Show();
+            }
+         
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -51,8 +58,38 @@ namespace CashSystem.admin
             EmployeeInfo.ProminentPosition = txtGovernmentOffice1.Text + "/" + txtPosition1.Text;
             EmployeeInfo.SpouseProminentPosition = txtGovernmentOffice2.Text + "/" + txtPosition2.Text;
 
-            this.Close();
-            AllForms.openAccountForm3.Show();
+
+            if(
+                EmployeeInfo.CivilStatus == "" ||
+                EmployeeInfo.Gender == "" ||
+                EmployeeInfo.MonthlyBankStatement == "" ||
+                EmployeeInfo.TypeOfID == "" ||
+                EmployeeInfo.IdNumber == "" ||          
+                EmployeeInfo.MotherMaidenName == "" ||
+                EmployeeInfo.EmployerBusinessAddr == "" ||
+                EmployeeInfo.EmergencyContactName == "" ||
+                EmployeeInfo.EmergencyContactNum == "" ||
+                EmployeeInfo.PrimBeneficiary == "" ||
+                EmployeeInfo.SecBeneficiary == "" ||
+                EmployeeInfo.JobTitlePosition == "" ||
+                EmployeeInfo.PurposeOfAccOpening == "" ||
+                EmployeeInfo.TypesOfProductsAvailed == ""
+            )
+            {
+                MessageBox.Show("Some of the fields are empty.\nPlease check the empty fields before to proceed.", "Error");
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you sure all the fields are correct ?", "Message", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                  
+                    this.Hide();
+                    AllForms.openAccountForm3.Show();
+                }
+            }
+            
+            
 
         }
 
@@ -73,13 +110,20 @@ namespace CashSystem.admin
             rbtnDOLLAR.Enabled = false;
             rbtnPassbook.Enabled = false;
             rbtnPESO.Enabled = false;
-
+            txtGovernmentOffice1.Enabled = false;
+            txtGovernmentOffice2.Enabled = false;
+            txtPosition1.Enabled = false;
+            txtPosition2.Enabled = false;
             txtTypesOfProducts.Enabled = false;
+            rbtnNo1.Checked = true;
+            rbtnNo2.Checked = true;
         }
 
         private void chkSavingsDep_CheckedChanged(object sender, EventArgs e)
         {
-            if(chkSavingsDep.Checked == true)
+         
+
+            if (chkSavingsDep.Checked == true)
             {
                 rbtnPassbook.Enabled = true;
                 rbtnATM.Enabled = true;
@@ -88,6 +132,7 @@ namespace CashSystem.admin
                 {
                     txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Savings Deposit;";
                 }
+              
             }
             else
             {
@@ -100,6 +145,13 @@ namespace CashSystem.admin
                 rbtnPassbook.Checked = false;
                 rbtnDOLLAR.Checked = false;
                 rbtnPESO.Checked = false;
+
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text.Replace("Savings Deposit;", "");
+            }
+            if (chkOthers.Checked == true && chkSavingsDep.Checked == true)
+            {
+                chkOthers.Checked = false;
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Savings Deposit;";
             }
         }
 
@@ -151,8 +203,19 @@ namespace CashSystem.admin
 
         private void chkCurrentDepAcc_CheckedChanged(object sender, EventArgs e)
         {
+            String temp = txtTypesOfProducts.Text = txtTypesOfProducts.Text;
             if (chkCurrentDepAcc.Checked == true)
             {
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Current Deposit Account;";
+            }
+            else
+            {
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text.Replace("Current Deposit Account;", "");
+            }
+
+            if (chkCurrentDepAcc.Checked == true && chkOthers.Checked == true)
+            {
+                chkOthers.Checked = false;
                 txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Current Deposit Account;";
             }
         }
@@ -161,6 +224,15 @@ namespace CashSystem.admin
         {
             if (chkCertifcateTimeDep.Checked == true)
             {
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Certificate of Time Deposit;";
+            }
+            else
+            {
+                txtTypesOfProducts.Text = txtTypesOfProducts.Text.Replace("Certificate of Time Deposit;", "");
+            }
+            if (chkCertifcateTimeDep.Checked == true && chkOthers.Checked == true)
+            {
+                chkOthers.Checked = false;
                 txtTypesOfProducts.Text = txtTypesOfProducts.Text + "Certificate of Time Deposit;";
             }
         }
@@ -192,6 +264,38 @@ namespace CashSystem.admin
             else
             {
                 EmployeeInfo.IsDollar = "False";
+            }
+        }
+
+        private void rbtnYes1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbtnYes1.Checked == true)
+            {
+                txtPosition1.Enabled = true;
+                txtGovernmentOffice1.Enabled = true;
+            }
+            else
+            {
+                txtPosition1.Text = "";
+                txtGovernmentOffice1.Text = "";
+                txtPosition1.Enabled = false;
+                txtGovernmentOffice1.Enabled = false;
+            }
+        }
+
+        private void rbtnYes2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtnYes2.Checked == true)
+            {
+                txtPosition2.Enabled = true;
+                txtGovernmentOffice2.Enabled = true;
+            }
+            else
+            {
+                txtPosition2.Text = "";
+                txtGovernmentOffice2.Text = "";
+                txtPosition2.Enabled = false;
+                txtGovernmentOffice2.Enabled = false;
             }
         }
     }

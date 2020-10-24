@@ -29,48 +29,158 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.depositGridView = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtAmoundDeposit = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtNewBalance = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtParticulars = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depositGridView)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.depositGridView);
             this.panel1.Location = new System.Drawing.Point(240, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 337);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // depositGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 15);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(541, 306);
-            this.dataGridView1.TabIndex = 0;
+            this.depositGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.depositGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.depositGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.depositGridView.Location = new System.Drawing.Point(16, 15);
+            this.depositGridView.Name = "depositGridView";
+            this.depositGridView.ReadOnly = true;
+            this.depositGridView.Size = new System.Drawing.Size(541, 306);
+            this.depositGridView.TabIndex = 0;
+            this.depositGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.depositGridView_CellClick);
+            this.depositGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.depositGridView_CellContentClick);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtAmoundDeposit);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.txtNewBalance);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txtDate);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txtParticulars);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(12, 86);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 337);
             this.panel2.TabIndex = 1;
+            // 
+            // txtAmoundDeposit
+            // 
+            this.txtAmoundDeposit.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAmoundDeposit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAmoundDeposit.Enabled = false;
+            this.txtAmoundDeposit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmoundDeposit.Location = new System.Drawing.Point(13, 37);
+            this.txtAmoundDeposit.Multiline = true;
+            this.txtAmoundDeposit.Name = "txtAmoundDeposit";
+            this.txtAmoundDeposit.Size = new System.Drawing.Size(199, 29);
+            this.txtAmoundDeposit.TabIndex = 71;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(9, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 21);
+            this.label7.TabIndex = 70;
+            this.label7.Text = "Amount Deposited";
+            // 
+            // txtNewBalance
+            // 
+            this.txtNewBalance.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNewBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNewBalance.Enabled = false;
+            this.txtNewBalance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewBalance.Location = new System.Drawing.Point(13, 283);
+            this.txtNewBalance.Multiline = true;
+            this.txtNewBalance.Name = "txtNewBalance";
+            this.txtNewBalance.Size = new System.Drawing.Size(199, 29);
+            this.txtNewBalance.TabIndex = 69;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(9, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 21);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "New Balance";
+            // 
+            // txtDate
+            // 
+            this.txtDate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDate.Enabled = false;
+            this.txtDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(13, 95);
+            this.txtDate.Multiline = true;
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(199, 29);
+            this.txtDate.TabIndex = 67;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(9, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 21);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Date";
+            // 
+            // txtParticulars
+            // 
+            this.txtParticulars.BackColor = System.Drawing.SystemColors.Control;
+            this.txtParticulars.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtParticulars.Enabled = false;
+            this.txtParticulars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParticulars.Location = new System.Drawing.Point(13, 161);
+            this.txtParticulars.Multiline = true;
+            this.txtParticulars.Name = "txtParticulars";
+            this.txtParticulars.Size = new System.Drawing.Size(199, 85);
+            this.txtParticulars.TabIndex = 65;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(9, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 21);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Particulars";
             // 
             // label1
             // 
@@ -97,29 +207,6 @@
             this.btnCancel.Text = "CLOSE";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 112);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 85);
-            this.textBox2.TabIndex = 65;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(9, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 21);
-            this.label4.TabIndex = 64;
-            this.label4.Text = "Particulars";
             // 
             // button1
             // 
@@ -171,12 +258,28 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 81;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.button2.Location = new System.Drawing.Point(613, 58);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 24);
+            this.button2.TabIndex = 86;
+            this.button2.Text = "DEPOSIT";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // DepositTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(825, 448);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker2);
@@ -187,9 +290,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DepositTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DepositTransaction";
+            this.Load += new System.EventHandler(this.DepositTransaction_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depositGridView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -203,13 +308,20 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView depositGridView;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtAmoundDeposit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtNewBalance;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtDate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtParticulars;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }

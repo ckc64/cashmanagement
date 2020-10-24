@@ -1,6 +1,6 @@
 ﻿namespace CashSystem.general
 {
-    partial class AccountTransaction
+    partial class DepositForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAmountDeposit = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,11 +42,11 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(29, 32);
+            this.panel1.Controls.Add(this.txtAmountDeposit);
+            this.panel1.Location = new System.Drawing.Point(29, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(352, 199);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // button2
             // 
@@ -69,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(18, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 22);
+            this.label1.Size = new System.Drawing.Size(152, 22);
             this.label1.TabIndex = 7;
-            this.label1.Text = "SEARCH ACCOUNT";
+            this.label1.Text = "ENTER AMOUNT";
             // 
             // button1
             // 
@@ -83,33 +83,32 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(308, 44);
             this.button1.TabIndex = 6;
-            this.button1.Text = "SEARCH";
+            this.button1.Text = "DEPOSIT";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtAmountDeposit
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(22, 47);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 37);
-            this.textBox1.TabIndex = 5;
+            this.txtAmountDeposit.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAmountDeposit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAmountDeposit.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmountDeposit.Location = new System.Drawing.Point(22, 47);
+            this.txtAmountDeposit.Multiline = true;
+            this.txtAmountDeposit.Name = "txtAmountDeposit";
+            this.txtAmountDeposit.Size = new System.Drawing.Size(308, 37);
+            this.txtAmountDeposit.TabIndex = 5;
             // 
-            // AccountTransaction
+            // DepositForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(414, 248);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(410, 296);
             this.Controls.Add(this.panel1);
-            this.Name = "AccountTransaction";
+            this.Name = "DepositForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Account Transaction";
-            this.Load += new System.EventHandler(this.AccountTransaction_Load);
+            this.Text = "Cash Management System - Deposit";
+            this.Load += new System.EventHandler(this.DepositForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -119,9 +118,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtAmountDeposit;
     }
 }

@@ -12,11 +12,9 @@ D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.admin.Se
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.customer.CustomerHome.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.customer.CustomerWithdraw.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.customer.CustomerDeposit.resources
-D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.CustomerBoard.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.DepositTransaction.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.DetailsAccountForm1.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.DetailsAccountForm2.resources
-D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.AccountTransaction.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.AllAccountsForm.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.AllTransactions.resources
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.WithdrawalTransaction.resources
@@ -26,3 +24,6 @@ D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.csproj.G
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.csproj.CoreCompileInputs.cache
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.exe
 D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.pdb
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.CustomerAccountTransaction.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.SearchAccountTransaction.resources
+D:\Github\cashmanagement\CashSystem\CashSystem\obj\x64\Debug\CashSystem.general.DepositForm.resources

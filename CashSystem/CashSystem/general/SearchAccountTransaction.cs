@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CashSystem.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CashSystem.general
 {
-    public partial class AccountTransaction : Form
+    public partial class SearchAccountTransaction : Form
     {
-        public AccountTransaction()
+        public SearchAccountTransaction()
         {
             InitializeComponent();
         }
@@ -64,8 +65,12 @@ namespace CashSystem.general
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Searching.AccNumber = txtSearchAccNumber.Text;
+
             this.Hide();
-            AllForms.customerBoard.Show();
+            CustomerAccountTransaction cus = new CustomerAccountTransaction();
+            cus.Show();
+            txtSearchAccNumber.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)

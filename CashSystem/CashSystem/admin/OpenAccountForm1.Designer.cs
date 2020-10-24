@@ -71,6 +71,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLname = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +103,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnProceed);
             this.panel1.Controls.Add(this.panel2);
@@ -166,6 +170,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.txtTinIDNo);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.txtSourceOfFunds);
@@ -231,7 +237,7 @@
             this.txtNameOfEmployer.BackColor = System.Drawing.Color.White;
             this.txtNameOfEmployer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNameOfEmployer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameOfEmployer.Location = new System.Drawing.Point(20, 165);
+            this.txtNameOfEmployer.Location = new System.Drawing.Point(20, 177);
             this.txtNameOfEmployer.Multiline = true;
             this.txtNameOfEmployer.Name = "txtNameOfEmployer";
             this.txtNameOfEmployer.Size = new System.Drawing.Size(250, 21);
@@ -242,7 +248,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(17, 141);
+            this.label19.Location = new System.Drawing.Point(17, 140);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(152, 21);
             this.label19.TabIndex = 48;
@@ -253,7 +259,7 @@
             this.txtNatureOfEmployment.BackColor = System.Drawing.Color.White;
             this.txtNatureOfEmployment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNatureOfEmployment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNatureOfEmployment.Location = new System.Drawing.Point(20, 107);
+            this.txtNatureOfEmployment.Location = new System.Drawing.Point(20, 115);
             this.txtNatureOfEmployment.Multiline = true;
             this.txtNatureOfEmployment.Name = "txtNatureOfEmployment";
             this.txtNatureOfEmployment.Size = new System.Drawing.Size(250, 21);
@@ -264,7 +270,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(17, 83);
+            this.label18.Location = new System.Drawing.Point(17, 81);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(253, 21);
             this.label18.TabIndex = 46;
@@ -551,7 +557,7 @@
             this.txtSuffix.BackColor = System.Drawing.SystemColors.Control;
             this.txtSuffix.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSuffix.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSuffix.Location = new System.Drawing.Point(26, 126);
+            this.txtSuffix.Location = new System.Drawing.Point(26, 135);
             this.txtSuffix.Multiline = true;
             this.txtSuffix.Name = "txtSuffix";
             this.txtSuffix.Size = new System.Drawing.Size(99, 21);
@@ -635,6 +641,39 @@
             this.label22.Text = "Note* All forms can be blank and edit later except for Lastname,Firstname and Mid" +
     "dle Name.";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(17, 160);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(131, 16);
+            this.label27.TabIndex = 94;
+            this.label27.Text = "(put student if student)";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(16, 99);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(131, 16);
+            this.label23.TabIndex = 95;
+            this.label23.Text = "(put student if student)";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(24, 118);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(94, 16);
+            this.label24.TabIndex = 96;
+            this.label24.Text = "(can be empty)";
+            // 
             // OpenAccountForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -702,5 +741,8 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnProceed;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label24;
     }
 }

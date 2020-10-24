@@ -1,6 +1,6 @@
 ﻿namespace CashSystem.general
 {
-    partial class CustomerBoard
+    partial class CustomerAccountTransaction
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,16 +106,17 @@
             this.btnViewDeposit.TabIndex = 27;
             this.btnViewDeposit.Text = "VIEW DEPOSIT TRANSACTIONS";
             this.btnViewDeposit.UseVisualStyleBackColor = false;
+            this.btnViewDeposit.Click += new System.EventHandler(this.btnViewDeposit_Click);
             // 
             // txtBalance
             // 
             this.txtBalance.BackColor = System.Drawing.SystemColors.Control;
             this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBalance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBalance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBalance.Location = new System.Drawing.Point(14, 91);
             this.txtBalance.Multiline = true;
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(308, 28);
+            this.txtBalance.Size = new System.Drawing.Size(308, 35);
             this.txtBalance.TabIndex = 26;
             // 
             // txtName
@@ -153,6 +155,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnViewAllTransact);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnViewDebit);
@@ -164,18 +167,35 @@
             this.panel1.Controls.Add(this.btnViewDeposit);
             this.panel1.Location = new System.Drawing.Point(24, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 338);
+            this.panel1.Size = new System.Drawing.Size(334, 400);
             this.panel1.TabIndex = 32;
             // 
-            // CustomerBoard
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(14, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(308, 60);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "CANCEL";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CustomerAccountTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(384, 376);
+            this.ClientSize = new System.Drawing.Size(384, 433);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
-            this.Name = "CustomerBoard";
-            this.Text = "CustomerDashboard";
+            this.Name = "CustomerAccountTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cash Management System - Customer Account";
+            this.Load += new System.EventHandler(this.CustomerBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -194,5 +214,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
