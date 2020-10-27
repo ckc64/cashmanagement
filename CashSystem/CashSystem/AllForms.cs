@@ -14,7 +14,7 @@ namespace CashSystem
         public static AdminDashboard adminDashBoard = new AdminDashboard();
       
         public static frmLogin login = new frmLogin();
-        public static EmployeeCreateAccount createAccountEmployee = new EmployeeCreateAccount();
+
 
         //OPEN ACCOUNT FORMS
         public static OpenAccountForm1 openAccountForm1 = new OpenAccountForm1();

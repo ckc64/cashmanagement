@@ -95,12 +95,6 @@
     <Compile Include="admin\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin\EmployeeCreateAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\EmployeeCreateAccount.Designer.cs">
-      <DependentUpon>EmployeeCreateAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="admin\OpenAccountForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="general\WithdrawalTransaction.resx">
       <DependentUpon>WithdrawalTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\WithdrawForm.resx">
+      <DependentUpon>WithdrawForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

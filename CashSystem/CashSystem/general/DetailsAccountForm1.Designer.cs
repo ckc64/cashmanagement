@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label22 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTinIDNo = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -73,21 +70,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(293, 49);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(559, 17);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Note* All forms can be blank and edit later except for Lastname,Firstname and Mid" +
-    "dle Name.";
             // 
             // textBox1
             // 
@@ -100,30 +86,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(305, 21);
             this.textBox1.TabIndex = 57;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(22, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(147, 21);
-            this.label23.TabIndex = 56;
-            this.label23.Text = "Account Number";
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Firebrick;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnCancel.Location = new System.Drawing.Point(659, 500);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(149, 41);
-            this.btnCancel.TabIndex = 55;
-            this.btnCancel.Text = "CANCEL";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -147,6 +109,7 @@
             // 
             this.txtTinIDNo.BackColor = System.Drawing.Color.White;
             this.txtTinIDNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTinIDNo.Enabled = false;
             this.txtTinIDNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTinIDNo.Location = new System.Drawing.Point(22, 325);
             this.txtTinIDNo.Multiline = true;
@@ -169,6 +132,7 @@
             // 
             this.txtSourceOfFunds.BackColor = System.Drawing.Color.White;
             this.txtSourceOfFunds.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSourceOfFunds.Enabled = false;
             this.txtSourceOfFunds.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSourceOfFunds.Location = new System.Drawing.Point(21, 232);
             this.txtSourceOfFunds.Multiline = true;
@@ -191,6 +155,7 @@
             // 
             this.txtNameOfEmployer.BackColor = System.Drawing.Color.White;
             this.txtNameOfEmployer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNameOfEmployer.Enabled = false;
             this.txtNameOfEmployer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameOfEmployer.Location = new System.Drawing.Point(20, 165);
             this.txtNameOfEmployer.Multiline = true;
@@ -213,6 +178,7 @@
             // 
             this.txtNatureOfEmployment.BackColor = System.Drawing.Color.White;
             this.txtNatureOfEmployment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNatureOfEmployment.Enabled = false;
             this.txtNatureOfEmployment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNatureOfEmployment.Location = new System.Drawing.Point(20, 107);
             this.txtNatureOfEmployment.Multiline = true;
@@ -235,6 +201,7 @@
             // 
             this.txtNationality.BackColor = System.Drawing.Color.White;
             this.txtNationality.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNationality.Enabled = false;
             this.txtNationality.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationality.Location = new System.Drawing.Point(20, 48);
             this.txtNationality.Multiline = true;
@@ -257,6 +224,7 @@
             // 
             this.txtEmailAddr.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmailAddr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmailAddr.Enabled = false;
             this.txtEmailAddr.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailAddr.Location = new System.Drawing.Point(239, 544);
             this.txtEmailAddr.Multiline = true;
@@ -279,6 +247,7 @@
             // 
             this.txtContactNum.BackColor = System.Drawing.SystemColors.Control;
             this.txtContactNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContactNum.Enabled = false;
             this.txtContactNum.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContactNum.Location = new System.Drawing.Point(31, 544);
             this.txtContactNum.Multiline = true;
@@ -335,6 +304,7 @@
             // 
             this.txtPermanentAddress.BackColor = System.Drawing.SystemColors.Control;
             this.txtPermanentAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPermanentAddress.Enabled = false;
             this.txtPermanentAddress.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPermanentAddress.Location = new System.Drawing.Point(31, 429);
             this.txtPermanentAddress.Multiline = true;
@@ -346,6 +316,7 @@
             // 
             this.txtYear.BackColor = System.Drawing.Color.White;
             this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtYear.Enabled = false;
             this.txtYear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYear.Location = new System.Drawing.Point(147, 204);
             this.txtYear.Multiline = true;
@@ -380,6 +351,7 @@
             // 
             this.txtPresentAddress.BackColor = System.Drawing.SystemColors.Control;
             this.txtPresentAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPresentAddress.Enabled = false;
             this.txtPresentAddress.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPresentAddress.Location = new System.Drawing.Point(31, 297);
             this.txtPresentAddress.Multiline = true;
@@ -391,6 +363,7 @@
             // 
             this.txtPOfBirth.BackColor = System.Drawing.SystemColors.Control;
             this.txtPOfBirth.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPOfBirth.Enabled = false;
             this.txtPOfBirth.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPOfBirth.Location = new System.Drawing.Point(223, 204);
             this.txtPOfBirth.Multiline = true;
@@ -444,6 +417,7 @@
             // 
             // cmbDay
             // 
+            this.cmbDay.Enabled = false;
             this.cmbDay.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDay.FormattingEnabled = true;
             this.cmbDay.Items.AddRange(new object[] {
@@ -489,7 +463,6 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtEmailAddr);
             this.panel1.Controls.Add(this.label16);
@@ -539,6 +512,7 @@
             // 
             // cmbMonth
             // 
+            this.cmbMonth.Enabled = false;
             this.cmbMonth.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMonth.FormattingEnabled = true;
             this.cmbMonth.Items.AddRange(new object[] {
@@ -574,6 +548,7 @@
             // 
             this.txtSuffix.BackColor = System.Drawing.SystemColors.Control;
             this.txtSuffix.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSuffix.Enabled = false;
             this.txtSuffix.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSuffix.Location = new System.Drawing.Point(26, 148);
             this.txtSuffix.Multiline = true;
@@ -596,6 +571,7 @@
             // 
             this.txtMname.BackColor = System.Drawing.SystemColors.Control;
             this.txtMname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMname.Enabled = false;
             this.txtMname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMname.Location = new System.Drawing.Point(420, 89);
             this.txtMname.Multiline = true;
@@ -618,6 +594,7 @@
             // 
             this.txtFname.BackColor = System.Drawing.SystemColors.Control;
             this.txtFname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFname.Enabled = false;
             this.txtFname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFname.Location = new System.Drawing.Point(223, 89);
             this.txtFname.Multiline = true;
@@ -640,6 +617,7 @@
             // 
             this.txtLname.BackColor = System.Drawing.SystemColors.Control;
             this.txtLname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLname.Enabled = false;
             this.txtLname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLname.Location = new System.Drawing.Point(27, 89);
             this.txtLname.Multiline = true;
@@ -658,13 +636,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lastname";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(22, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(147, 21);
+            this.label23.TabIndex = 56;
+            this.label23.Text = "Account Number";
+            // 
             // DetailsAccountForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1053, 716);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "DetailsAccountForm1";
@@ -680,11 +668,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtTinIDNo;
         private System.Windows.Forms.Label label21;
@@ -726,5 +710,6 @@
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label23;
     }
 }

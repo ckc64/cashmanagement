@@ -106,5 +106,11 @@ namespace CashSystem.general
             this.Hide();
           
         }
+
+        private void btnViewWithdrawal_Click(object sender, EventArgs e)
+        {
+            AllForms.withdrawalTransaction.Show();
+            this.Hide();
+        }
     }
 }

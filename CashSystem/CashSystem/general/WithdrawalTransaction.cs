@@ -34,7 +34,7 @@ namespace CashSystem.general
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection.sqlCon;
 
-                command.CommandText = "SELECT amountdep AS AMOUNT_DEPOSITED, particular AS PARTICULAR, newbalance AS NEW_BALANCE, datetransact AS DATE_TRANSACT FROM customerwithdraw WHERE accnum='" + Searching.AccNumber + "'";
+                command.CommandText = "SELECT amountwithdraw AS AMOUNT_WITHDRAW, particular AS PARTICULAR, newbalance AS NEW_BALANCE, datetransact AS DATE_TRANSACT FROM customerwithdraw WHERE accnum='" + Searching.AccNumber + "'";
                 OleDbDataAdapter d = new OleDbDataAdapter(command);
                 DataTable dt = new DataTable();
                 d.Fill(dt);

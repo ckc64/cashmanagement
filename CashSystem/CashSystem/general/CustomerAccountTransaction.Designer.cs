@@ -93,6 +93,7 @@
             this.btnViewWithdrawal.TabIndex = 28;
             this.btnViewWithdrawal.Text = "VIEW WITHDRAWAL TRANSACTIONS";
             this.btnViewWithdrawal.UseVisualStyleBackColor = false;
+            this.btnViewWithdrawal.Click += new System.EventHandler(this.btnViewWithdrawal_Click);
             // 
             // btnViewDeposit
             // 

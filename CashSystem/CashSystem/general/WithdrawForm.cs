@@ -28,8 +28,8 @@ namespace CashSystem.general
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection.sqlCon;
                 String particulars = "withdraw " + txtAmountDeposit.Text;
-                command.CommandText = "INSERT INTO customerwithdraw (accnum,amountdep,particular,newbalance,datetransact)" +
-                    "VALUES('" + Searching.AccNumber + "','" + int.Parse(txtAmountDeposit.Text) + "','" + particulars + "','" + (Searching.CurrentBalance + int.Parse(txtAmountDeposit.Text)) + "','" + DateTime.Now + "')";
+                command.CommandText = "INSERT INTO customerwithdraw (accnum,amountwithdraw,particular,newbalance,datetransact)" +
+                    "VALUES('" + Searching.AccNumber + "','" + int.Parse(txtAmountDeposit.Text) + "','" + particulars + "','" + (Searching.CurrentBalance - int.Parse(txtAmountDeposit.Text)) + "','" + DateTime.Now + "')";
                 command.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace CashSystem.general
             }
             connection.sqlCon.Close();
 
-            MessageBox.Show(txtAmountDeposit.Text + " is successfully deposited into the account", "SUCCESS");
+            MessageBox.Show(txtAmountDeposit.Text + " is successfully withdraw into the account", "SUCCESS");
             this.Hide();
             txtAmountDeposit.Text = "";
             CustomerAccountTransaction cus = new CustomerAccountTransaction();

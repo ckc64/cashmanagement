@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label27 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtSecBeneficiary = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbtnNo2 = new System.Windows.Forms.RadioButton();
             this.rbtnYes2 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbtnNo1 = new System.Windows.Forms.RadioButton();
             this.rbtnYes1 = new System.Windows.Forms.RadioButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.txtPosition2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtGovernmentOffice2 = new System.Windows.Forms.TextBox();
@@ -44,14 +49,20 @@
             this.txtGovernmentOffice1 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.chkSavingsDep = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtProductsServices = new System.Windows.Forms.TextBox();
-            this.chkSavings = new System.Windows.Forms.CheckBox();
-            this.chkATM = new System.Windows.Forms.CheckBox();
-            this.chkRegular = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.txtTypesOfProducts = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbtnDOLLAR = new System.Windows.Forms.RadioButton();
+            this.rbtnPESO = new System.Windows.Forms.RadioButton();
+            this.chkOthers = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbtnATM = new System.Windows.Forms.RadioButton();
+            this.rbtnPassbook = new System.Windows.Forms.RadioButton();
+            this.chkCertifcateTimeDep = new System.Windows.Forms.CheckBox();
+            this.chkCurrentDepAcc = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtBeneficiary = new System.Windows.Forms.TextBox();
+            this.txtPrimBeneficiary = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbMonthlyStatement = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -82,15 +93,50 @@
             this.txtSpouseName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(159, 462);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(143, 17);
+            this.label27.TabIndex = 93;
+            this.label27.Text = "(put student if student)";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(144, 209);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(100, 17);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "(can be empty)";
+            // 
+            // txtSecBeneficiary
+            // 
+            this.txtSecBeneficiary.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSecBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSecBeneficiary.Enabled = false;
+            this.txtSecBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecBeneficiary.Location = new System.Drawing.Point(321, 298);
+            this.txtSecBeneficiary.Multiline = true;
+            this.txtSecBeneficiary.Name = "txtSecBeneficiary";
+            this.txtSecBeneficiary.Size = new System.Drawing.Size(267, 21);
+            this.txtSecBeneficiary.TabIndex = 92;
             // 
             // groupBox1
             // 
@@ -107,6 +153,7 @@
             // rbtnNo2
             // 
             this.rbtnNo2.AutoSize = true;
+            this.rbtnNo2.Enabled = false;
             this.rbtnNo2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnNo2.Location = new System.Drawing.Point(48, 11);
             this.rbtnNo2.Name = "rbtnNo2";
@@ -119,6 +166,7 @@
             // rbtnYes2
             // 
             this.rbtnYes2.AutoSize = true;
+            this.rbtnYes2.Enabled = false;
             this.rbtnYes2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnYes2.Location = new System.Drawing.Point(7, 11);
             this.rbtnYes2.Name = "rbtnYes2";
@@ -143,6 +191,7 @@
             // rbtnNo1
             // 
             this.rbtnNo1.AutoSize = true;
+            this.rbtnNo1.Enabled = false;
             this.rbtnNo1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnNo1.Location = new System.Drawing.Point(48, 11);
             this.rbtnNo1.Name = "rbtnNo1";
@@ -155,6 +204,7 @@
             // rbtnYes1
             // 
             this.rbtnYes1.AutoSize = true;
+            this.rbtnYes1.Enabled = false;
             this.rbtnYes1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnYes1.Location = new System.Drawing.Point(7, 11);
             this.rbtnYes1.Name = "rbtnYes1";
@@ -164,10 +214,33 @@
             this.rbtnYes1.Text = "Yes";
             this.rbtnYes1.UseVisualStyleBackColor = true;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(129, 20);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(147, 16);
+            this.label20.TabIndex = 49;
+            this.label20.Text = "(pls check ALL that apply)";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(317, 270);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(181, 21);
+            this.label26.TabIndex = 91;
+            this.label26.Text = "Secondary Beneficiary";
+            // 
             // txtPosition2
             // 
             this.txtPosition2.BackColor = System.Drawing.SystemColors.Control;
             this.txtPosition2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPosition2.Enabled = false;
             this.txtPosition2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPosition2.Location = new System.Drawing.Point(622, 495);
             this.txtPosition2.Multiline = true;
@@ -190,6 +263,7 @@
             // 
             this.txtGovernmentOffice2.BackColor = System.Drawing.SystemColors.Control;
             this.txtGovernmentOffice2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGovernmentOffice2.Enabled = false;
             this.txtGovernmentOffice2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGovernmentOffice2.Location = new System.Drawing.Point(620, 452);
             this.txtGovernmentOffice2.Multiline = true;
@@ -224,6 +298,7 @@
             // 
             this.txtPosition1.BackColor = System.Drawing.SystemColors.Control;
             this.txtPosition1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPosition1.Enabled = false;
             this.txtPosition1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPosition1.Location = new System.Drawing.Point(621, 333);
             this.txtPosition1.Multiline = true;
@@ -246,6 +321,7 @@
             // 
             this.txtGovernmentOffice1.BackColor = System.Drawing.SystemColors.Control;
             this.txtGovernmentOffice1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGovernmentOffice1.Enabled = false;
             this.txtGovernmentOffice1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGovernmentOffice1.Location = new System.Drawing.Point(622, 289);
             this.txtGovernmentOffice1.Multiline = true;
@@ -276,72 +352,145 @@
             this.label16.Text = "Does you hold a prominent position in the Philippines/\r\na Foreign State/an Intern" +
     "ational State?";
             // 
+            // chkSavingsDep
+            // 
+            this.chkSavingsDep.AutoSize = true;
+            this.chkSavingsDep.Enabled = false;
+            this.chkSavingsDep.Location = new System.Drawing.Point(6, 38);
+            this.chkSavingsDep.Name = "chkSavingsDep";
+            this.chkSavingsDep.Size = new System.Drawing.Size(103, 17);
+            this.chkSavingsDep.TabIndex = 50;
+            this.chkSavingsDep.Text = "Savings Deposit";
+            this.chkSavingsDep.UseVisualStyleBackColor = true;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.txtProductsServices);
-            this.panel3.Controls.Add(this.chkSavings);
-            this.panel3.Controls.Add(this.chkATM);
-            this.panel3.Controls.Add(this.chkRegular);
+            this.panel3.Controls.Add(this.txtTypesOfProducts);
+            this.panel3.Controls.Add(this.groupBox4);
+            this.panel3.Controls.Add(this.chkOthers);
+            this.panel3.Controls.Add(this.groupBox3);
+            this.panel3.Controls.Add(this.chkCertifcateTimeDep);
+            this.panel3.Controls.Add(this.chkCurrentDepAcc);
+            this.panel3.Controls.Add(this.chkSavingsDep);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(622, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 181);
+            this.panel3.Size = new System.Drawing.Size(296, 191);
             this.panel3.TabIndex = 49;
             // 
-            // txtProductsServices
+            // txtTypesOfProducts
             // 
-            this.txtProductsServices.BackColor = System.Drawing.Color.White;
-            this.txtProductsServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProductsServices.Enabled = false;
-            this.txtProductsServices.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductsServices.Location = new System.Drawing.Point(6, 112);
-            this.txtProductsServices.Multiline = true;
-            this.txtProductsServices.Name = "txtProductsServices";
-            this.txtProductsServices.Size = new System.Drawing.Size(283, 57);
-            this.txtProductsServices.TabIndex = 49;
+            this.txtTypesOfProducts.Enabled = false;
+            this.txtTypesOfProducts.Location = new System.Drawing.Point(6, 149);
+            this.txtTypesOfProducts.Multiline = true;
+            this.txtTypesOfProducts.Name = "txtTypesOfProducts";
+            this.txtTypesOfProducts.Size = new System.Drawing.Size(284, 35);
+            this.txtTypesOfProducts.TabIndex = 55;
             // 
-            // chkSavings
+            // groupBox4
             // 
-            this.chkSavings.AutoSize = true;
-            this.chkSavings.Location = new System.Drawing.Point(6, 89);
-            this.chkSavings.Name = "chkSavings";
-            this.chkSavings.Size = new System.Drawing.Size(283, 17);
-            this.chkSavings.TabIndex = 52;
-            this.chkSavings.Text = "Savings Payroll Account Prepaid/Debit Card Accounts";
-            this.chkSavings.UseVisualStyleBackColor = true;
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.rbtnDOLLAR);
+            this.groupBox4.Controls.Add(this.rbtnPESO);
+            this.groupBox4.Location = new System.Drawing.Point(148, 55);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(136, 31);
+            this.groupBox4.TabIndex = 54;
+            this.groupBox4.TabStop = false;
             // 
-            // chkATM
+            // rbtnDOLLAR
             // 
-            this.chkATM.AutoSize = true;
-            this.chkATM.Location = new System.Drawing.Point(6, 66);
-            this.chkATM.Name = "chkATM";
-            this.chkATM.Size = new System.Drawing.Size(129, 17);
-            this.chkATM.TabIndex = 51;
-            this.chkATM.Text = "ATM Savings Deposit";
-            this.chkATM.UseVisualStyleBackColor = true;
+            this.rbtnDOLLAR.AutoSize = true;
+            this.rbtnDOLLAR.Enabled = false;
+            this.rbtnDOLLAR.Location = new System.Drawing.Point(64, 9);
+            this.rbtnDOLLAR.Name = "rbtnDOLLAR";
+            this.rbtnDOLLAR.Size = new System.Drawing.Size(68, 17);
+            this.rbtnDOLLAR.TabIndex = 1;
+            this.rbtnDOLLAR.TabStop = true;
+            this.rbtnDOLLAR.Text = "DOLLAR";
+            this.rbtnDOLLAR.UseVisualStyleBackColor = true;
             // 
-            // chkRegular
+            // rbtnPESO
             // 
-            this.chkRegular.AutoSize = true;
-            this.chkRegular.Location = new System.Drawing.Point(6, 43);
-            this.chkRegular.Name = "chkRegular";
-            this.chkRegular.Size = new System.Drawing.Size(229, 17);
-            this.chkRegular.TabIndex = 50;
-            this.chkRegular.Text = "Regular Savings Deposit(Passbook-Based)";
-            this.chkRegular.UseVisualStyleBackColor = true;
+            this.rbtnPESO.AutoSize = true;
+            this.rbtnPESO.Enabled = false;
+            this.rbtnPESO.Location = new System.Drawing.Point(4, 9);
+            this.rbtnPESO.Name = "rbtnPESO";
+            this.rbtnPESO.Size = new System.Drawing.Size(54, 17);
+            this.rbtnPESO.TabIndex = 0;
+            this.rbtnPESO.TabStop = true;
+            this.rbtnPESO.Text = "PESO";
+            this.rbtnPESO.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // chkOthers
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(129, 20);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(147, 16);
-            this.label20.TabIndex = 49;
-            this.label20.Text = "(pls check ALL that apply)";
+            this.chkOthers.AutoSize = true;
+            this.chkOthers.Enabled = false;
+            this.chkOthers.Location = new System.Drawing.Point(6, 127);
+            this.chkOthers.Name = "chkOthers";
+            this.chkOthers.Size = new System.Drawing.Size(57, 17);
+            this.chkOthers.TabIndex = 54;
+            this.chkOthers.Text = "Others";
+            this.chkOthers.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.rbtnATM);
+            this.groupBox3.Controls.Add(this.rbtnPassbook);
+            this.groupBox3.Location = new System.Drawing.Point(6, 55);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(136, 31);
+            this.groupBox3.TabIndex = 53;
+            this.groupBox3.TabStop = false;
+            // 
+            // rbtnATM
+            // 
+            this.rbtnATM.AutoSize = true;
+            this.rbtnATM.Enabled = false;
+            this.rbtnATM.Location = new System.Drawing.Point(85, 9);
+            this.rbtnATM.Name = "rbtnATM";
+            this.rbtnATM.Size = new System.Drawing.Size(48, 17);
+            this.rbtnATM.TabIndex = 1;
+            this.rbtnATM.TabStop = true;
+            this.rbtnATM.Text = "ATM";
+            this.rbtnATM.UseVisualStyleBackColor = true;
+            // 
+            // rbtnPassbook
+            // 
+            this.rbtnPassbook.AutoSize = true;
+            this.rbtnPassbook.Enabled = false;
+            this.rbtnPassbook.Location = new System.Drawing.Point(5, 9);
+            this.rbtnPassbook.Name = "rbtnPassbook";
+            this.rbtnPassbook.Size = new System.Drawing.Size(72, 17);
+            this.rbtnPassbook.TabIndex = 0;
+            this.rbtnPassbook.TabStop = true;
+            this.rbtnPassbook.Text = "Passbook";
+            this.rbtnPassbook.UseVisualStyleBackColor = true;
+            // 
+            // chkCertifcateTimeDep
+            // 
+            this.chkCertifcateTimeDep.AutoSize = true;
+            this.chkCertifcateTimeDep.Enabled = false;
+            this.chkCertifcateTimeDep.Location = new System.Drawing.Point(6, 109);
+            this.chkCertifcateTimeDep.Name = "chkCertifcateTimeDep";
+            this.chkCertifcateTimeDep.Size = new System.Drawing.Size(181, 17);
+            this.chkCertifcateTimeDep.TabIndex = 52;
+            this.chkCertifcateTimeDep.Text = "Certificate of Time Deposit (CTD)";
+            this.chkCertifcateTimeDep.UseVisualStyleBackColor = true;
+            // 
+            // chkCurrentDepAcc
+            // 
+            this.chkCurrentDepAcc.AutoSize = true;
+            this.chkCurrentDepAcc.Enabled = false;
+            this.chkCurrentDepAcc.Location = new System.Drawing.Point(6, 92);
+            this.chkCurrentDepAcc.Name = "chkCurrentDepAcc";
+            this.chkCurrentDepAcc.Size = new System.Drawing.Size(142, 17);
+            this.chkCurrentDepAcc.TabIndex = 51;
+            this.chkCurrentDepAcc.Text = "Current Deposit Account";
+            this.chkCurrentDepAcc.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -354,16 +503,17 @@
             this.label15.TabIndex = 48;
             this.label15.Text = "Types of Products and Services to be\r\navailed from the Bank\r\n";
             // 
-            // txtBeneficiary
+            // txtPrimBeneficiary
             // 
-            this.txtBeneficiary.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeneficiary.Location = new System.Drawing.Point(321, 235);
-            this.txtBeneficiary.Multiline = true;
-            this.txtBeneficiary.Name = "txtBeneficiary";
-            this.txtBeneficiary.Size = new System.Drawing.Size(267, 21);
-            this.txtBeneficiary.TabIndex = 72;
+            this.txtPrimBeneficiary.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPrimBeneficiary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrimBeneficiary.Enabled = false;
+            this.txtPrimBeneficiary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrimBeneficiary.Location = new System.Drawing.Point(321, 235);
+            this.txtPrimBeneficiary.Multiline = true;
+            this.txtPrimBeneficiary.Name = "txtPrimBeneficiary";
+            this.txtPrimBeneficiary.Size = new System.Drawing.Size(267, 21);
+            this.txtPrimBeneficiary.TabIndex = 72;
             // 
             // label13
             // 
@@ -372,19 +522,20 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(317, 207);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 21);
+            this.label13.Size = new System.Drawing.Size(154, 21);
             this.label13.TabIndex = 71;
-            this.label13.Text = "Beneficiary";
+            this.label13.Text = "Primary Beneficiary";
             // 
             // cmbMonthlyStatement
             // 
+            this.cmbMonthlyStatement.Enabled = false;
             this.cmbMonthlyStatement.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMonthlyStatement.FormattingEnabled = true;
             this.cmbMonthlyStatement.Items.AddRange(new object[] {
             "Pick-up",
             "Mail to Present Address",
             "Email"});
-            this.cmbMonthlyStatement.Location = new System.Drawing.Point(379, 523);
+            this.cmbMonthlyStatement.Location = new System.Drawing.Point(370, 500);
             this.cmbMonthlyStatement.Name = "cmbMonthlyStatement";
             this.cmbMonthlyStatement.Size = new System.Drawing.Size(138, 24);
             this.cmbMonthlyStatement.TabIndex = 70;
@@ -394,7 +545,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(378, 495);
+            this.label10.Location = new System.Drawing.Point(369, 472);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(204, 21);
             this.label10.TabIndex = 69;
@@ -404,6 +555,7 @@
             // 
             this.txtPurposeAccOpening.BackColor = System.Drawing.SystemColors.Control;
             this.txtPurposeAccOpening.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPurposeAccOpening.Enabled = false;
             this.txtPurposeAccOpening.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPurposeAccOpening.Location = new System.Drawing.Point(26, 544);
             this.txtPurposeAccOpening.Multiline = true;
@@ -426,6 +578,7 @@
             // 
             this.txtJobPos.BackColor = System.Drawing.SystemColors.Control;
             this.txtJobPos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtJobPos.Enabled = false;
             this.txtJobPos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobPos.Location = new System.Drawing.Point(26, 486);
             this.txtJobPos.Multiline = true;
@@ -459,6 +612,7 @@
             // 
             this.txtIDNumber.BackColor = System.Drawing.SystemColors.Control;
             this.txtIDNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIDNumber.Enabled = false;
             this.txtIDNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDNumber.Location = new System.Drawing.Point(26, 170);
             this.txtIDNumber.Multiline = true;
@@ -468,6 +622,7 @@
             // 
             // cmbIDType
             // 
+            this.cmbIDType.Enabled = false;
             this.cmbIDType.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbIDType.FormattingEnabled = true;
             this.cmbIDType.Items.AddRange(new object[] {
@@ -491,6 +646,7 @@
             // 
             // cmbGender
             // 
+            this.cmbGender.Enabled = false;
             this.cmbGender.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGender.FormattingEnabled = true;
             this.cmbGender.Items.AddRange(new object[] {
@@ -516,6 +672,7 @@
             // 
             this.txtMMaidenName.BackColor = System.Drawing.SystemColors.Control;
             this.txtMMaidenName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMMaidenName.Enabled = false;
             this.txtMMaidenName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMMaidenName.Location = new System.Drawing.Point(26, 298);
             this.txtMMaidenName.Multiline = true;
@@ -540,7 +697,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnCancel.Location = new System.Drawing.Point(696, 523);
+            this.btnCancel.Location = new System.Drawing.Point(620, 534);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(104, 41);
             this.btnCancel.TabIndex = 55;
@@ -553,11 +710,11 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnSave.Location = new System.Drawing.Point(806, 523);
+            this.btnSave.Location = new System.Drawing.Point(730, 534);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(104, 41);
-            this.btnSave.TabIndex = 55;
-            this.btnSave.Text = "SAVE";
+            this.btnSave.Size = new System.Drawing.Size(159, 41);
+            this.btnSave.TabIndex = 54;
+            this.btnSave.Text = "PROCEED";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // panel2
@@ -588,6 +745,7 @@
             // 
             this.txtEmergecyNumber.BackColor = System.Drawing.Color.White;
             this.txtEmergecyNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmergecyNumber.Enabled = false;
             this.txtEmergecyNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmergecyNumber.Location = new System.Drawing.Point(20, 107);
             this.txtEmergecyNumber.Multiline = true;
@@ -610,6 +768,7 @@
             // 
             this.txtEmergencyName.BackColor = System.Drawing.Color.White;
             this.txtEmergencyName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmergencyName.Enabled = false;
             this.txtEmergencyName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmergencyName.Location = new System.Drawing.Point(20, 48);
             this.txtEmergencyName.Multiline = true;
@@ -655,6 +814,7 @@
             // 
             this.txtEmployerAddr.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmployerAddr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmployerAddr.Enabled = false;
             this.txtEmployerAddr.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployerAddr.Location = new System.Drawing.Point(26, 368);
             this.txtEmployerAddr.Multiline = true;
@@ -664,6 +824,7 @@
             // 
             // cmbCivilStatus
             // 
+            this.cmbCivilStatus.Enabled = false;
             this.cmbCivilStatus.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCivilStatus.FormattingEnabled = true;
             this.cmbCivilStatus.Items.AddRange(new object[] {
@@ -680,6 +841,7 @@
             // 
             this.txtSpouseName.BackColor = System.Drawing.SystemColors.Control;
             this.txtSpouseName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSpouseName.Enabled = false;
             this.txtSpouseName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSpouseName.Location = new System.Drawing.Point(26, 234);
             this.txtSpouseName.Multiline = true;
@@ -709,17 +871,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Civil Status";
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(202, 49);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(264, 17);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "Note* All forms can be blank and edit later.";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -728,12 +879,16 @@
             this.label1.Location = new System.Drawing.Point(23, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 24);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 7;
             this.label1.Text = "II. Client Profiling";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.txtSecBeneficiary);
+            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.txtPosition2);
@@ -747,7 +902,7 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.txtBeneficiary);
+            this.panel1.Controls.Add(this.txtPrimBeneficiary);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.cmbMonthlyStatement);
             this.panel1.Controls.Add(this.label10);
@@ -776,7 +931,7 @@
             this.panel1.Location = new System.Drawing.Point(26, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(955, 606);
-            this.panel1.TabIndex = 9;
+            this.panel1.TabIndex = 8;
             // 
             // DetailsAccountForm2
             // 
@@ -784,9 +939,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1004, 716);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Enabled = false;
             this.Name = "DetailsAccountForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetailsAccountForm2";
@@ -796,6 +951,10 @@
             this.groupBox2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -807,12 +966,17 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtSecBeneficiary;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbtnNo2;
         private System.Windows.Forms.RadioButton rbtnYes2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbtnNo1;
         private System.Windows.Forms.RadioButton rbtnYes1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox txtPosition2;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txtGovernmentOffice2;
@@ -823,14 +987,20 @@
         private System.Windows.Forms.TextBox txtGovernmentOffice1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.CheckBox chkSavingsDep;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtProductsServices;
-        private System.Windows.Forms.CheckBox chkSavings;
-        private System.Windows.Forms.CheckBox chkATM;
-        private System.Windows.Forms.CheckBox chkRegular;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtTypesOfProducts;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton rbtnDOLLAR;
+        private System.Windows.Forms.RadioButton rbtnPESO;
+        private System.Windows.Forms.CheckBox chkOthers;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rbtnATM;
+        private System.Windows.Forms.RadioButton rbtnPassbook;
+        private System.Windows.Forms.CheckBox chkCertifcateTimeDep;
+        private System.Windows.Forms.CheckBox chkCurrentDepAcc;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtBeneficiary;
+        private System.Windows.Forms.TextBox txtPrimBeneficiary;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbMonthlyStatement;
         private System.Windows.Forms.Label label10;
@@ -861,7 +1031,6 @@
         private System.Windows.Forms.TextBox txtSpouseName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
     }
