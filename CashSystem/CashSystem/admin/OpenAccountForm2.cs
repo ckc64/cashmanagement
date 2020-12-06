@@ -40,40 +40,40 @@ namespace CashSystem.admin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            EmployeeInfo.CivilStatus = cmbCivilStatus.Text;
-            EmployeeInfo.Gender = cmbGender.Text;
-            EmployeeInfo.MonthlyBankStatement = cmbMonthlyStatement.Text;
-            EmployeeInfo.TypeOfID = cmbIDType.Text;
-            EmployeeInfo.IdNumber = txtIDNumber.Text;
-            EmployeeInfo.SpouseName = txtSpouseName.Text;
-            EmployeeInfo.MotherMaidenName = txtMMaidenName.Text;
-            EmployeeInfo.EmployerBusinessAddr = txtEmployerAddr.Text;
-            EmployeeInfo.EmergencyContactName = txtEmergencyName.Text;
-            EmployeeInfo.EmergencyContactNum = txtEmergecyNumber.Text;
-            EmployeeInfo.PrimBeneficiary = txtPrimBeneficiary.Text;
-            EmployeeInfo.SecBeneficiary = txtSecBeneficiary.Text;
-            EmployeeInfo.JobTitlePosition = txtJobPos.Text;
-            EmployeeInfo.PurposeOfAccOpening = txtPurposeAccOpening.Text;
-            EmployeeInfo.TypesOfProductsAvailed = txtTypesOfProducts.Text;
-            EmployeeInfo.ProminentPosition = txtGovernmentOffice1.Text + "/" + txtPosition1.Text;
-            EmployeeInfo.SpouseProminentPosition = txtGovernmentOffice2.Text + "/" + txtPosition2.Text;
+            CustomerInfo.CivilStatus = cmbCivilStatus.Text;
+            CustomerInfo.Gender = cmbGender.Text;
+            CustomerInfo.MonthlyBankStatement = cmbMonthlyStatement.Text;
+            CustomerInfo.TypeOfID = cmbIDType.Text;
+            CustomerInfo.IdNumber = txtIDNumber.Text;
+            CustomerInfo.SpouseName = txtSpouseName.Text;
+            CustomerInfo.MotherMaidenName = txtMMaidenName.Text;
+            CustomerInfo.EmployerBusinessAddr = txtEmployerAddr.Text;
+            CustomerInfo.EmergencyContactName = txtEmergencyName.Text;
+            CustomerInfo.EmergencyContactNum = txtEmergecyNumber.Text;
+            CustomerInfo.PrimBeneficiary = txtPrimBeneficiary.Text;
+            CustomerInfo.SecBeneficiary = txtSecBeneficiary.Text;
+            CustomerInfo.JobTitlePosition = txtJobPos.Text;
+            CustomerInfo.PurposeOfAccOpening = txtPurposeAccOpening.Text;
+            CustomerInfo.TypesOfProductsAvailed = txtTypesOfProducts.Text;
+            CustomerInfo.ProminentPosition = txtGovernmentOffice1.Text + "/" + txtPosition1.Text;
+            CustomerInfo.SpouseProminentPosition = txtGovernmentOffice2.Text + "/" + txtPosition2.Text;
 
 
             if(
-                EmployeeInfo.CivilStatus == "" ||
-                EmployeeInfo.Gender == "" ||
-                EmployeeInfo.MonthlyBankStatement == "" ||
-                EmployeeInfo.TypeOfID == "" ||
-                EmployeeInfo.IdNumber == "" ||          
-                EmployeeInfo.MotherMaidenName == "" ||
-                EmployeeInfo.EmployerBusinessAddr == "" ||
-                EmployeeInfo.EmergencyContactName == "" ||
-                EmployeeInfo.EmergencyContactNum == "" ||
-                EmployeeInfo.PrimBeneficiary == "" ||
-                EmployeeInfo.SecBeneficiary == "" ||
-                EmployeeInfo.JobTitlePosition == "" ||
-                EmployeeInfo.PurposeOfAccOpening == "" ||
-                EmployeeInfo.TypesOfProductsAvailed == ""
+                CustomerInfo.CivilStatus == "" ||
+                CustomerInfo.Gender == "" ||
+                CustomerInfo.MonthlyBankStatement == "" ||
+                CustomerInfo.TypeOfID == "" ||
+                CustomerInfo.IdNumber == "" ||          
+                CustomerInfo.MotherMaidenName == "" ||
+                CustomerInfo.EmployerBusinessAddr == "" ||
+                CustomerInfo.EmergencyContactName == "" ||
+                CustomerInfo.EmergencyContactNum == "" ||
+                CustomerInfo.PrimBeneficiary == "" ||
+                CustomerInfo.SecBeneficiary == "" ||
+                CustomerInfo.JobTitlePosition == "" ||
+                CustomerInfo.PurposeOfAccOpening == "" ||
+                CustomerInfo.TypesOfProductsAvailed == ""
             )
             {
                 MessageBox.Show("Some of the fields are empty.\nPlease check the empty fields before to proceed.", "Error");
@@ -162,12 +162,12 @@ namespace CashSystem.admin
                 rbtnDOLLAR.Enabled = true;
                 rbtnPESO.Enabled = true;
 
-                EmployeeInfo.IsPassbook = "True";
+                CustomerInfo.IsPassbook = "True";
 
             }
             else
             {
-                EmployeeInfo.IsPassbook = "False";
+                CustomerInfo.IsPassbook = "False";
             }
         }
 
@@ -177,11 +177,11 @@ namespace CashSystem.admin
 
             if(rbtnPESO.Checked == true)
             {
-                EmployeeInfo.IsPeso = "True";
+                CustomerInfo.IsPeso = "True";
             }
             else
             {
-                EmployeeInfo.IsPeso = "False";
+                CustomerInfo.IsPeso = "False";
             }
         }
 
@@ -192,11 +192,11 @@ namespace CashSystem.admin
                 rbtnDOLLAR.Enabled = true;
                 rbtnPESO.Enabled = true;
 
-                EmployeeInfo.IsATM = "True";
+                CustomerInfo.IsATM = "True";
             }
             else
             {
-                EmployeeInfo.IsATM = "False";
+                CustomerInfo.IsATM = "False";
             }
 
         }
@@ -259,11 +259,11 @@ namespace CashSystem.admin
         {
             if (rbtnDOLLAR.Checked == true)
             {
-                EmployeeInfo.IsDollar = "True";
+                CustomerInfo.IsDollar = "True";
             }
             else
             {
-                EmployeeInfo.IsDollar = "False";
+                CustomerInfo.IsDollar = "False";
             }
         }
 

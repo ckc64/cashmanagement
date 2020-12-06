@@ -29,5 +29,10 @@ namespace CashSystem.admin
             AllForms.adminDashBoard.Show();
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
+        }
     }
 }

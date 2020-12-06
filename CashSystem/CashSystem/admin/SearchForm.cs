@@ -12,6 +12,7 @@ namespace CashSystem.admin
 {
     public partial class SearchForm : Form
     {
+        String searchType;
         public SearchForm()
         {
             InitializeComponent();
@@ -24,8 +25,26 @@ namespace CashSystem.admin
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
             this.Hide();
-            AllForms.detailsAccountForm1.Show();
+            //AllForms.detailsAccountForm1.Show();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton1.Checked == true)
+            {
+                searchType = "Customer";
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                searchType = "Employee";
+            }
         }
     }
 }

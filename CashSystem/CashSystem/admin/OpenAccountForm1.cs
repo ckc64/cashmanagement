@@ -31,39 +31,39 @@ namespace CashSystem.admin
         private void btnProceed_Click(object sender, EventArgs e)
         {
 
-            EmployeeInfo.LastName = txtLname.Text;
-            EmployeeInfo.FirstName = txtFname.Text;
-            EmployeeInfo.MiddleName = txtMname.Text;
-            EmployeeInfo.Suffix = txtSuffix.Text;
-            EmployeeInfo.DateOfBirth = cmbMonth.Text + "/" + cmbDay.Text + "/" + txtYear.Text;
-            EmployeeInfo.PlaceOfBirth = txtPOfBirth.Text;
-            EmployeeInfo.PresentAddress = txtPresentAddress.Text;
-            EmployeeInfo.PermanentAddress = txtPermanentAddress.Text;
-            EmployeeInfo.ContactNum = txtContactNum.Text;
-            EmployeeInfo.EmailAddress = txtEmailAddr.Text;
-            EmployeeInfo.Nationality = txtNationality.Text;
-            EmployeeInfo.NatureOfEmployment = txtNatureOfEmployment.Text;
-            EmployeeInfo.NameOfEmployer = txtNameOfEmployer.Text;
-            EmployeeInfo.SourceOfFunds = txtSourceOfFunds.Text;
-            EmployeeInfo.Tinssgsisumidno = txtTinIDNo.Text;
+            CustomerInfo.LastName = txtLname.Text;
+            CustomerInfo.FirstName = txtFname.Text;
+            CustomerInfo.MiddleName = txtMname.Text;
+            CustomerInfo.Suffix = txtSuffix.Text;
+            CustomerInfo.DateOfBirth = cmbMonth.Text + "/" + cmbDay.Text + "/" + txtYear.Text;
+            CustomerInfo.PlaceOfBirth = txtPOfBirth.Text;
+            CustomerInfo.PresentAddress = txtPresentAddress.Text;
+            CustomerInfo.PermanentAddress = txtPermanentAddress.Text;
+            CustomerInfo.ContactNum = txtContactNum.Text;
+            CustomerInfo.EmailAddress = txtEmailAddr.Text;
+            CustomerInfo.Nationality = txtNationality.Text;
+            CustomerInfo.NatureOfEmployment = txtNatureOfEmployment.Text;
+            CustomerInfo.NameOfEmployer = txtNameOfEmployer.Text;
+            CustomerInfo.SourceOfFunds = txtSourceOfFunds.Text;
+            CustomerInfo.Tinssgsisumidno = txtTinIDNo.Text;
            
           
 
-            if (EmployeeInfo.LastName == "" ||
-            EmployeeInfo.FirstName == "" ||
-            EmployeeInfo.MiddleName == "" ||
+            if (CustomerInfo.LastName == "" ||
+            CustomerInfo.FirstName == "" ||
+            CustomerInfo.MiddleName == "" ||
            
-            EmployeeInfo.DateOfBirth == "" ||
-            EmployeeInfo.PlaceOfBirth == "" ||
-            EmployeeInfo.PresentAddress == "" ||
-            EmployeeInfo.PermanentAddress == "" ||
-            EmployeeInfo.ContactNum == "" ||
-            EmployeeInfo.EmailAddress == "" ||
-            EmployeeInfo.Nationality == "" ||
-            EmployeeInfo.NatureOfEmployment == "" ||
-            EmployeeInfo.NameOfEmployer == "" ||
-            EmployeeInfo.SourceOfFunds == "" ||
-            EmployeeInfo.Tinssgsisumidno == "")
+            CustomerInfo.DateOfBirth == "" ||
+            CustomerInfo.PlaceOfBirth == "" ||
+            CustomerInfo.PresentAddress == "" ||
+            CustomerInfo.PermanentAddress == "" ||
+            CustomerInfo.ContactNum == "" ||
+            CustomerInfo.EmailAddress == "" ||
+            CustomerInfo.Nationality == "" ||
+            CustomerInfo.NatureOfEmployment == "" ||
+            CustomerInfo.NameOfEmployer == "" ||
+            CustomerInfo.SourceOfFunds == "" ||
+            CustomerInfo.Tinssgsisumidno == "")
             {
                 MessageBox.Show("Some of the fields are empty.\nPlease check the empty fields before to proceed.", "Error");
             }

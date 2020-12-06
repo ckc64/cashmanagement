@@ -1,6 +1,6 @@
 ﻿namespace CashSystem.general
 {
-    partial class CustomerAccountTransaction
+    partial class CustomerBoardAccountTransaction
     {
         /// <summary>
         /// Required designer variable.
@@ -54,6 +54,7 @@
             this.btnViewAllTransact.TabIndex = 31;
             this.btnViewAllTransact.Text = "VIEW ALL TRANSACTIONS";
             this.btnViewAllTransact.UseVisualStyleBackColor = false;
+            this.btnViewAllTransact.Click += new System.EventHandler(this.btnViewAllTransact_Click);
             // 
             // btnViewDebit
             // 
@@ -67,6 +68,7 @@
             this.btnViewDebit.TabIndex = 30;
             this.btnViewDebit.Text = "DEBIT";
             this.btnViewDebit.UseVisualStyleBackColor = false;
+            this.btnViewDebit.Click += new System.EventHandler(this.btnViewDebit_Click);
             // 
             // btnViewCredited
             // 
@@ -80,6 +82,7 @@
             this.btnViewCredited.TabIndex = 29;
             this.btnViewCredited.Text = "CREDITED";
             this.btnViewCredited.UseVisualStyleBackColor = false;
+            this.btnViewCredited.Click += new System.EventHandler(this.btnViewCredited_Click);
             // 
             // btnViewWithdrawal
             // 
@@ -185,7 +188,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // CustomerAccountTransaction
+            // CustomerBoardAccountTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +196,7 @@
             this.ClientSize = new System.Drawing.Size(384, 433);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
-            this.Name = "CustomerAccountTransaction";
+            this.Name = "CustomerBoardAccountTransaction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cash Management System - Customer Account";
             this.Load += new System.EventHandler(this.CustomerBoard_Load);

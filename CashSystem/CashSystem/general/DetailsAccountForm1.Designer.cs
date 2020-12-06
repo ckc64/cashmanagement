@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTinIDNo = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -70,22 +69,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(175, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 21);
-            this.textBox1.TabIndex = 57;
             // 
             // panel2
             // 
@@ -461,8 +447,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtEmailAddr);
             this.panel1.Controls.Add(this.label16);
@@ -636,17 +620,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lastname";
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(22, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(147, 21);
-            this.label23.TabIndex = 56;
-            this.label23.Text = "Account Number";
-            // 
             // DetailsAccountForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -668,7 +641,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtTinIDNo;
         private System.Windows.Forms.Label label21;
@@ -710,6 +682,5 @@
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label23;
     }
 }

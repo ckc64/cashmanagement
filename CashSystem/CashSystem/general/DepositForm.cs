@@ -55,7 +55,7 @@ namespace CashSystem.general
             MessageBox.Show(txtAmountDeposit.Text + " is successfully deposited into the account", "SUCCESS");
             this.Hide();
             txtAmountDeposit.Text = "";
-            CustomerAccountTransaction cus = new CustomerAccountTransaction();
+            CustomerBoardAccountTransaction cus = new CustomerBoardAccountTransaction();
             cus.Show();
         }
 

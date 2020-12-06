@@ -42,7 +42,7 @@ namespace CashSystem
         public static CustomerHome customerHome = new CustomerHome();
         public static CustomerWithdraw customerWithdraw = new CustomerWithdraw();
 
-        public static CustomerAccountTransaction customerBoard = new CustomerAccountTransaction();
+        public static CustomerBoardAccountTransaction customerBoard = new CustomerBoardAccountTransaction();
 
         //dEPOSIT
         public static DepositForm depositForm = new DepositForm();

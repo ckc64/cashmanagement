@@ -21,5 +21,10 @@ namespace CashSystem.general
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
+        }
     }
 }

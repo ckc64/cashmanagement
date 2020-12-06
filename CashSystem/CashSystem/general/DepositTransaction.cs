@@ -70,5 +70,10 @@ namespace CashSystem.general
                 txtDate.Text = row.Cells[3].Value.ToString();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
+        }
     }
 }

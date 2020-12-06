@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CashSystem.general
 {
-    public partial class CustomerAccountTransaction : Form
+    public partial class CustomerBoardAccountTransaction : Form
     {
-        public CustomerAccountTransaction()
+        public CustomerBoardAccountTransaction()
         {
             InitializeComponent();
         }
@@ -111,6 +111,23 @@ namespace CashSystem.general
         {
             AllForms.withdrawalTransaction.Show();
             this.Hide();
+        }
+
+        private void btnViewAllTransact_Click(object sender, EventArgs e)
+        {
+            AllCustomerTransaction a = new AllCustomerTransaction();
+            this.Hide();
+            a.Show();
+        }
+
+        private void btnViewCredited_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
+        }
+
+        private void btnViewDebit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("THIS PART IS UNDER DEVELOPMENT", "Error");
         }
     }
 }

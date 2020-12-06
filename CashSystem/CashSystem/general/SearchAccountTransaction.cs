@@ -68,7 +68,7 @@ namespace CashSystem.general
             Searching.AccNumber = txtSearchAccNumber.Text;
 
             this.Hide();
-            CustomerAccountTransaction cus = new CustomerAccountTransaction();
+            CustomerBoardAccountTransaction cus = new CustomerBoardAccountTransaction();
             cus.Show();
             txtSearchAccNumber.Text = "";
         }

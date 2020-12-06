@@ -1,6 +1,6 @@
 ﻿namespace CashSystem.general
 {
-    partial class WithdrawalTransaction
+    partial class AllCustomerTransaction
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtAmountWithdraw = new System.Windows.Forms.TextBox();
+            this.txtAmoundDeposit = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNewBalance = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,26 +45,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.withdrawGridView = new System.Windows.Forms.DataGridView();
+            this.transactionGridView = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.withdrawGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(616, 68);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 24);
-            this.button2.TabIndex = 96;
-            this.button2.Text = "WITHDRAW";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dateTimePicker2
             // 
@@ -85,17 +70,17 @@
             this.label2.TabIndex = 92;
             this.label2.Text = "FROM";
             // 
-            // txtAmountWithdraw
+            // txtAmoundDeposit
             // 
-            this.txtAmountWithdraw.BackColor = System.Drawing.SystemColors.Control;
-            this.txtAmountWithdraw.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAmountWithdraw.Enabled = false;
-            this.txtAmountWithdraw.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmountWithdraw.Location = new System.Drawing.Point(13, 37);
-            this.txtAmountWithdraw.Multiline = true;
-            this.txtAmountWithdraw.Name = "txtAmountWithdraw";
-            this.txtAmountWithdraw.Size = new System.Drawing.Size(199, 29);
-            this.txtAmountWithdraw.TabIndex = 71;
+            this.txtAmoundDeposit.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAmoundDeposit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAmoundDeposit.Enabled = false;
+            this.txtAmoundDeposit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmoundDeposit.Location = new System.Drawing.Point(13, 37);
+            this.txtAmoundDeposit.Multiline = true;
+            this.txtAmoundDeposit.Name = "txtAmoundDeposit";
+            this.txtAmoundDeposit.Size = new System.Drawing.Size(199, 29);
+            this.txtAmoundDeposit.TabIndex = 71;
             // 
             // label7
             // 
@@ -104,9 +89,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(9, 14);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 21);
+            this.label7.Size = new System.Drawing.Size(159, 21);
             this.label7.TabIndex = 70;
-            this.label7.Text = "Amount Withdraw";
+            this.label7.Text = "Amount Deposited";
             // 
             // txtNewBalance
             // 
@@ -232,14 +217,14 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 22);
+            this.label1.Size = new System.Drawing.Size(189, 22);
             this.label1.TabIndex = 89;
-            this.label1.Text = "WITHDRAW TRANSACTIONS";
+            this.label1.Text = "ALL TRANSACTIONS";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.txtAmountWithdraw);
+            this.panel2.Controls.Add(this.txtAmoundDeposit);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.txtNewBalance);
             this.panel2.Controls.Add(this.label6);
@@ -255,32 +240,41 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.withdrawGridView);
+            this.panel1.Controls.Add(this.transactionGridView);
             this.panel1.Location = new System.Drawing.Point(243, 96);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 337);
             this.panel1.TabIndex = 87;
             // 
-            // withdrawGridView
+            // transactionGridView
             // 
-            this.withdrawGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.withdrawGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.withdrawGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.withdrawGridView.Location = new System.Drawing.Point(16, 15);
-            this.withdrawGridView.Name = "withdrawGridView";
-            this.withdrawGridView.ReadOnly = true;
-            this.withdrawGridView.Size = new System.Drawing.Size(541, 306);
-            this.withdrawGridView.TabIndex = 0;
-            this.withdrawGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.withdrawGridView_CellClick);
-            this.withdrawGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.withdrawGridView_CellContentClick);
+            this.transactionGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.transactionGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.transactionGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.transactionGridView.Location = new System.Drawing.Point(16, 15);
+            this.transactionGridView.Name = "transactionGridView";
+            this.transactionGridView.ReadOnly = true;
+            this.transactionGridView.Size = new System.Drawing.Size(541, 306);
+            this.transactionGridView.TabIndex = 0;
             // 
-            // WithdrawalTransaction
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(253, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(297, 33);
+            this.label8.TabIndex = 96;
+            this.label8.Text = "UNDER DEVELOPMENT";
+            // 
+            // AllCustomerTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(825, 448);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -290,24 +284,22 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "WithdrawalTransaction";
-            this.Text = "WithdrawalTransaction";
-            this.Load += new System.EventHandler(this.WithdrawalTransaction_Load);
+            this.Name = "AllCustomerTransaction";
+            this.Text = "AllCustomerTransaction";
+            this.Load += new System.EventHandler(this.AllCustomerTransaction_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.withdrawGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAmountWithdraw;
+        private System.Windows.Forms.TextBox txtAmoundDeposit;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNewBalance;
         private System.Windows.Forms.Label label6;
@@ -322,6 +314,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView withdrawGridView;
+        private System.Windows.Forms.DataGridView transactionGridView;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CashSystem.classes
 {
-    public static class  EmployeeInfo
+    public static class  CustomerInfo
     {
         //mandatory
         private static String lastName;
